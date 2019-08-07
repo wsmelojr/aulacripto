@@ -38,6 +38,8 @@ Em seguida instale o programa *steghide* com o comando:
 
     sudo apt-get install steghide
 
+Teste se a instalação foi bem sucedida, executando o comando com um parâmetro de *help*.
+
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -176,7 +178,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTAyMzg3MywtMTEzODgwODE1LDU4Nz
+eyJoaXN0b3J5IjpbLTM1NTMyMjU2MywtMTEzODgwODE1LDU4Nz
 QyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMz
 MDA2OTY3Ml19
 -->
