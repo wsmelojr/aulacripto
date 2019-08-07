@@ -19,7 +19,9 @@ Veja o vídeo abaixo, que é parte de uma série de ficção. Ele ilustra um cas
 
 ### Questão 2: Descreva um exemplo onde uma esteganografia poderia ser usada para ocultar um crime. Explique como você acredita que um investigador forense deveria atuar nessa situação.
 
-A aplicação da esteganografia, todavia, não está restrita a atividades criminosas. Esta técnica pode ser sim explorada como mecanismo de proteção de sistemas. Uma aplicação muito interessante é a inserção de **marca d'agua** em um software usando esteganografia. Com isso, uma espécie 
+A aplicação da esteganografia, todavia, não está restrita a atividades criminosas. Esta técnica pode ser sim explorada como mecanismo de proteção de sistemas. Uma aplicação muito interessante é a inserção de **marca d'agua** em um software usando esteganografia. Com isso, uma espécie de "registro de propriedade secreto" é inserido dentro do software, e pode depois ser utilizado para expor uma tentativa de pirataria de um produto.
+
+DICA DO DIA: A tese de doutorado da Profa. Lucila Bento tr
 
 
 ## Como utilizar a esteganografia
@@ -163,6 +165,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTQ4NjA0MCwzNTc3NDk2LDE5ODAzNz
+eyJoaXN0b3J5IjpbMTc5ODQ1MTY3NSwzNTc3NDk2LDE5ODAzNz
 IyOTYsMzMwMDY5NjcyXX0=
 -->
