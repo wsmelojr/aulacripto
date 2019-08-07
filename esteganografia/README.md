@@ -30,6 +30,14 @@ Existem diferentes algoritmos para se obter a ocultação de uma informação us
 Nessa aula de laboratório, faremos uso de um aplicativo simples, todavia bastante funcional, chamado [*steghide*](http://steghide.sourceforge.net/documentation/manpage.php).
 
 
+### Instalando  e testando o *steghide*
+O primeiro passo é atualizar seu repositório use o seguinte comando:
+
+**sudo apt-get update**
+
+Em seguida Instale o programa com o comando
+
+**sudo apt-get install steghide**
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -168,6 +176,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3ND
-k2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
+eyJoaXN0b3J5IjpbMjA1OTY4MDc4NSw1ODc0MjA1NjEsNTc3Mj
+cxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
+
 -->
