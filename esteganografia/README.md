@@ -36,7 +36,7 @@ O primeiro passo é atualizar o repositório de programas do Ubuntu com o seguin
 
 Em seguida instale o programa *steghide* com o comando:
 
-**sudo apt-get install steghide**
+    sudo apt-get install steghide
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -175,6 +175,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM0MDU0MzUzLDU4NzQyMDU2MSw1NzcyNz
-E1NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMzMDA2OTY3Ml19
+eyJoaXN0b3J5IjpbLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3Mj
+cxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
+
 -->
