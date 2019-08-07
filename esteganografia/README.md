@@ -32,11 +32,11 @@ Nessa aula de laboratório, faremos uso de um aplicativo simples, todavia bastan
 ### Instalando  e testando o *steghide*
 O primeiro passo é atualizar o repositório de programas do Ubuntu com o seguinte comando:
 
-    sudo apt-get update	
+    $ sudo apt-get update	
 
 Em seguida instale o programa *steghide* com o comando:
 
-    sudo apt-get install steghide
+    $ sudo apt-get install steghide
 
 Teste se a instalação foi bem sucedida, executando o comando com um parâmetro de *help*.
 
@@ -178,7 +178,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTMyMjU2MywtMTEzODgwODE1LDU4Nz
-QyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMz
-MDA2OTY3Ml19
+eyJoaXN0b3J5IjpbLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMT
+M4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2LDE5
+ODAzNzIyOTYsMzMwMDY5NjcyXX0=
 -->
