@@ -10,18 +10,36 @@ O vídeo a seguir apresenta de forma sucinta os principais conceitos associados 
 
 ## Aplicações para a esteganografia
 
-Basicamente, as aplicações envolvem casos onde uma informação é transmitida de uma parte para outra de maneira furtiva em um canal amplamente acessível. Para tanto, diferentes tipos de mídia podem ser utilizados (imagens, áudios e vídeos, por exemplo).
+Basicamente, as aplicações de estaganografia envolvem casos onde uma informação é transmitida de uma parte para outra de maneira furtiva em um canal amplamente acessível. Para tanto, diferentes tipos de mídia podem ser utilizados (imagens, áudios e vídeos, por exemplo).
 
-Num primeiro momento, 
+Ferramentas que fazem uso de imagens ou vídeos para incluir mensagens ocultas geralmente chamam mais a atenção das pessoas, pelo impacto quase cinematográfico que isso sobre elas. Entretanto, qualquer arquivo digital pode ser usado em aplicações de esteganografia.
 
-Veja o vídeo abaixo, que é parte de uma série de ficção. 
+Veja o vídeo abaixo, que é parte de uma série de ficção. Ele ilustra um caso onde criminosos enviam mensagens por meio de vídeos esteganografados.
 [![VideoAula](https://img.youtube.com/vi/T4tG8_MFBsQ/0.jpg)](https://www.youtube.com/watch?v=T4tG8_MFBsQ "Clique para assistir um video que ilustra um possível uso da esteganografia!")
 
 ### Questão 2: Descreva um exemplo onde uma esteganografia poderia ser usada para ocultar um crime. Explique como você acredita que um investigador forense deveria atuar nessa situação.
 
+A aplicação da esteganografia, todavia, não está restrita a atividades criminosas. Esta técnica pode ser sim explorada como mecanismo de proteção de sistemas. Uma aplicação muito interessante é a inserção de **marca d'agua** em um software usando esteganografia. Com isso, uma espécie de "registro de propriedade secreto" é inserido dentro do software, e pode depois ser utilizado para expor uma tentativa de pirataria de um produto.
+
+**DICA DO DIA**: A tese de doutorado da Profa. Lucila Bento aborda a inserção de marca d'agua em produtos de software. Conversem com ela sobre o tema!
+
 ## Como utilizar a esteganografia
 
 Existem diferentes algoritmos para se obter a ocultação de uma informação usando esteganografia. Em alguns casos, esses algoritmos podem inclusive combinar outras técnicas de criptografia convencionais, como por exemplo um algorítmo de chave simétrica.
+
+Nessa aula de laboratório, faremos uso de um aplicativo simples, todavia bastante funcional, chamado [*steghide*](http://steghide.sourceforge.net/documentation/manpage.php).
+
+### Instalando  e testando o *steghide*
+O primeiro passo é atualizar o repositório de programas do Ubuntu com o seguinte comando:
+
+    $ sudo apt-get update	
+
+Em seguida instale o programa *steghide* com o comando:
+
+    $ sudo apt-get install steghide
+
+Teste se a instalação foi bem sucedida, executando o comando com um parâmetro de *help*.
+
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -160,5 +178,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwMDY5NjcyXX0=
+eyJoaXN0b3J5IjpbLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMT
+M4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2LDE5
+ODAzNzIyOTYsMzMwMDY5NjcyXX0=
 -->
