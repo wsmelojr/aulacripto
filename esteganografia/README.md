@@ -27,7 +27,9 @@ A aplicação da esteganografia, todavia, não está restrita a atividades crimi
 
 Existem diferentes algoritmos para se obter a ocultação de uma informação usando esteganografia. Em alguns casos, esses algoritmos podem inclusive combinar outras técnicas de criptografia convencionais, como por exemplo um algorítmo de chave simétrica.
 
-Nessa aula de laboratório, faremos uso de um aplicativo simples, todavia bastante funcional, chamado *steghide*. 
+Nessa aula de laboratório, faremos uso de um aplicativo simples, todavia bastante funcional, chamado [*steghide*](http://steghide.sourceforge.net/documentation/manpage.php).
+
+
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -166,6 +168,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU2NzA5OTgzLDU3NzI3MTU2NCwzNTc3ND
+eyJoaXN0b3J5IjpbNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3ND
 k2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
 -->
