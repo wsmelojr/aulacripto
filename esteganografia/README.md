@@ -42,6 +42,8 @@ Teste se a instalação foi bem sucedida, executando o comando com um parâmetro
 
     $ steghide --help
 
+Se você consegue ver as informações sobre o comando (versão, parâmetros, etc), então ele está instalado e pronto pra ser usado.
+
 ### Adicionando uma mensagem a uma imagem
 
 
@@ -182,7 +184,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDk0MjczMzEsLTE4NzA0NDU1NSwtMz
-U1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2
-NCwzNTc3NDk2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
+eyJoaXN0b3J5IjpbMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNT
+UzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0
+LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
 -->
