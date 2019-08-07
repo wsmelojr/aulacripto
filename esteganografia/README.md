@@ -19,6 +19,9 @@ Veja o vídeo abaixo, que é parte de uma série de ficção. Ele ilustra um cas
 
 ### Questão 2: Descreva um exemplo onde uma esteganografia poderia ser usada para ocultar um crime. Explique como você acredita que um investigador forense deveria atuar nessa situação.
 
+A aplicação da esteganografia, todavia, não está restrita a atividades criminosas. Esta técnica pode ser sim explorada como mecanismo de proteção 
+
+
 ## Como utilizar a esteganografia
 
 Existem diferentes algoritmos para se obter a ocultação de uma informação usando esteganografia. Em alguns casos, esses algoritmos podem inclusive combinar outras técnicas de criptografia convencionais, como por exemplo um algorítmo de chave simétrica.
@@ -160,5 +163,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODQzMzU2NCwzMzAwNjk2NzJdfQ==
+eyJoaXN0b3J5IjpbMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
 -->
