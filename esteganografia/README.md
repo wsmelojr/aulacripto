@@ -15,6 +15,7 @@ Basicamente, as aplicações de estaganografia envolvem casos onde uma informaç
 Ferramentas que fazem uso de imagens ou vídeos para incluir mensagens ocultas geralmente chamam mais a atenção das pessoas, pelo impacto quase cinematográfico que isso sobre elas. Entretanto, qualquer arquivo digital pode ser usado em aplicações de esteganografia.
 
 Veja o vídeo abaixo, que é parte de uma série de ficção. Ele ilustra um caso onde criminosos enviam mensagens por meio de vídeos esteganografados.
+
 [![VideoAula](https://img.youtube.com/vi/T4tG8_MFBsQ/0.jpg)](https://www.youtube.com/watch?v=T4tG8_MFBsQ "Clique para assistir um video que ilustra um possível uso da esteganografia!")
 
 ### Questão 2: Descreva um exemplo onde uma esteganografia poderia ser usada para ocultar um crime. Explique como você acredita que um investigador forense deveria atuar nessa situação.
@@ -184,7 +185,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNT
-UzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0
-LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
+eyJoaXN0b3J5IjpbLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMT
+g3MDQ0NTU1LC0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1
+NjEsNTc3MjcxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNj
+k2NzJdfQ==
 -->
