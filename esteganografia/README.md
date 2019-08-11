@@ -80,10 +80,12 @@ Em seguida, faça a verificação dos *hashes* de ambos os arquivos usando o alg
 
 Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela não é perceptível na imagem visual. Isso ocorre porque o *steghide* modifica os bits menos significativos da imagem (LSB). Para entender melhor o processo, leia o começo desse [tuorial](https://www.cybrary.it/0p3n/hide-secret-message-inside-image-using-lsb-steganography/). Está em inglês, mas o Google Translator é seu amigo!
 
-### Questão 3: Explique com suas palavras como os d
+### Questão 3: Explique com suas palavras como os dígitos menos significativos de uma imagem (LSBs) podem ser usados para guardar um segredo esteganografado.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzg0OTczMiwtMjAyOTc0NjIwMywxOD
+eyJoaXN0b3J5IjpbLTcxNTQxNDYxMSwtMjAyOTc0NjIwMywxOD
 Y5ODY5ODU5LDI5NzA0NjUxLDE4Njk4Njk4NTksMTA3MDQ4Mjk0
 OCwtOTk2NTUxNzMwLDM0MzM2MDM4MCwtNTE1NTQxMjAwLDE3Mj
 E4OTYzNjEsMTEzMTAyMjUxMywtMTU5Njc3MDQyNSwxNTgyNjA4
