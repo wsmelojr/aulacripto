@@ -53,8 +53,7 @@ Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *fo
 
 Em seguida, procedemos conforme os comandos abaixo:
 
-
-
+    steghide embed -cf foto.jpg -ef mensagem.txt
 
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -194,7 +193,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExODYwMDk2LC01MTU1NDEyMDAsMTcyMT
+eyJoaXN0b3J5IjpbMzQzMzYwMzgwLC01MTU1NDEyMDAsMTcyMT
 g5NjM2MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LDE1ODI2MDgw
 MjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4ODA4MTUsNT
 g3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2LDE5ODAzNzIyOTYs
