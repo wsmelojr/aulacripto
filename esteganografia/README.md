@@ -55,7 +55,7 @@ Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *fo
 
 Com o arquivo de imagem em mãos, é necessário criar a mensagem secreta em um arquivo texto. Para isso, crie um arquivo chamado *mensagem.txt* e digite nele sua mensagem secreta (uma frase curta, por exemplo).
 
-Em seguida, procedemos conforme os comandos abaixo:
+Em seguida, procedemos executando o seguinte comando:
 
     steghide embed -cf foto.jpg -ef mensagem.txt
 
@@ -69,7 +69,10 @@ O processo reverso, ou seja, a extração da mensagem secreta, pode ser feito us
 
     steghide extract -sf foto.jpg
 
-Observe que, ao executar esse comando, o *steghide* solicitará a *passphrase* usada no momento da criação da esteganografia.
+Observe que, ao executar esse comando, o *steghide* solicitará a *passphrase* usada no momento da criação da esteganografia. Sem a *passphrase* correta, a extração da esteganografia não vai funcionar!
+
+
+
 
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -209,9 +212,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzM0NzUwNjMsLTk5NjU1MTczMCwzND
-MzNjAzODAsLTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1
-MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC
-0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3Mjcx
-NTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
+eyJoaXN0b3J5IjpbMTc2NTUwMDIzLC05OTY1NTE3MzAsMzQzMz
+YwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEz
+LC0xNTk2NzcwNDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMz
+U1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2
+NCwzNTc3NDk2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
 -->
