@@ -100,9 +100,9 @@ Note que o *steghide* vai ler informações básicas da imagem e perguntar se vo
 
 Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem secreta será exibido. Caso contrário, o *steghide* notifica que não consegue extrair qualquer informação desse arquivo.
 
-### Questão 4: Repita os procedimentos para algum arquivo de áudio no formato WAV.  Você pode obter qualquer aq
+### Questão 4: Repita os procedimentos para algum arquivo de áudio no formato WAV.  Você pode obter qualquer arquivo de exemplo na Internet, ou criar um usando o gravador de som. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDYxMTgyNSwtMTE2MDY3MDQ5MCwtMj
+eyJoaXN0b3J5IjpbMTkxOTM1Mzk0MywtMTE2MDY3MDQ5MCwtMj
 AyOTc0NjIwMywxODY5ODY5ODU5LDI5NzA0NjUxLDE4Njk4Njk4
 NTksMTA3MDQ4Mjk0OCwtOTk2NTUxNzMwLDM0MzM2MDM4MCwtNT
 E1NTQxMjAwLDE3MjE4OTYzNjEsMTEzMTAyMjUxMywtMTU5Njc3
