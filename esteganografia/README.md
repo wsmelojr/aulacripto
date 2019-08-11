@@ -49,7 +49,9 @@ Se você consegue ver as informações sobre o comando (versão, parâmetros, et
 
 O *steghide* funciona com arquivos de imagem e áudio. Atualmente o *steghide* suporta apenas imagens digitais em formato JPEG e BMP e arquivos de áudio em WAV ou AU. 
 
-Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Para realizar a prática deste laboratório de forma correta, crie uma cópia do arquivo de *foto.jpg* c. 
+Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Para realizar a prática deste laboratório de forma correta, crie uma cópia do arquivo de *foto.jpg* com o seguinte nome: *foto-original.jpg*. 
+
+**IMPORTANTE**: se você está realizando esse tutorial com uma cópia do reposítorio em sua máquina, ele já provê arquivos exemplo para *foto.jpg* e "foto-original.jpg". Você pode sobreescrever esses dois arquivos, sem problemas!
 
 Com o arquivo de imagem em mãos, é necessário criar a mensagem secreta em um arquivo texto. Para isso, crie um arquivo chamado *mensagem.txt* e digite nele sua mensagem secreta (uma frase curta, por exemplo).
 
@@ -207,9 +209,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjY2MjQzNCwtOTk2NTUxNzMwLDM0Mz
-M2MDM4MCwtNTE1NTQxMjAwLDE3MjE4OTYzNjEsMTEzMTAyMjUx
-MywtMTU5Njc3MDQyNSwxNTgyNjA4MDI1LC0xODcwNDQ1NTUsLT
-M1NTMyMjU2MywtMTEzODgwODE1LDU4NzQyMDU2MSw1NzcyNzE1
-NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMzMDA2OTY3Ml19
+eyJoaXN0b3J5IjpbLTEyMzM0NzUwNjMsLTk5NjU1MTczMCwzND
+MzNjAzODAsLTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1
+MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC
+0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3Mjcx
+NTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
 -->
