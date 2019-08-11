@@ -71,7 +71,11 @@ O processo reverso, ou seja, a extração da mensagem secreta, pode ser feito us
 
 Observe que, ao executar esse comando, o *steghide* solicitará a *passphrase* usada no momento da criação da esteganografia. Sem a *passphrase* correta, a extração da esteganografia não vai funcionar!
 
-Agora, faça uma comparação visual entre os dois arquivos. 
+Faça uma comparação visual entre os dois arquivos. Abra ambas as imagens lado a lado, e veja se você consegue perceber alguma diferença entre elas.
+
+Em seguida, faça a verificação dos *hashes* de ambos os arquivos usando o algoritmo SHA1:
+
+    enter code here
 
 
 
@@ -213,9 +217,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MDQ4Mjk0OCwtOTk2NTUxNzMwLDM0Mz
-M2MDM4MCwtNTE1NTQxMjAwLDE3MjE4OTYzNjEsMTEzMTAyMjUx
-MywtMTU5Njc3MDQyNSwxNTgyNjA4MDI1LC0xODcwNDQ1NTUsLT
-M1NTMyMjU2MywtMTEzODgwODE1LDU4NzQyMDU2MSw1NzcyNzE1
-NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMzMDA2OTY3Ml19
+eyJoaXN0b3J5IjpbMzIzMDUzODkyLDEwNzA0ODI5NDgsLTk5Nj
+U1MTczMCwzNDMzNjAzODAsLTUxNTU0MTIwMCwxNzIxODk2MzYx
+LDExMzEwMjI1MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMT
+g3MDQ0NTU1LC0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1
+NjEsNTc3MjcxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNj
+k2NzJdfQ==
 -->
