@@ -98,17 +98,15 @@ Note que o *steghide* vai ler informações básicas da imagem e perguntar se vo
     Try to get information about embedded data ? (y/n) y
     Enter passphrase: 
 
-Se você informar a *passphrase* correta, o nome do arquivo contendo a
+Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem secreta será exibido. Caso contrário, o *steghide* notifica que não consegue extrair qualquer informação desse arquivo.
 
-
-### Questão 4: Explique com suas palavras como os dígitos menos significativos de uma imagem (LSBs) podem ser usados para guardar um segredo esteganografado.
-
+### Questão 4: Repita os procedimentos para algum arquivo de áudio no formato WAV.  Você pode obter qualquer aq
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjk2MDc4MjIsLTExNjA2NzA0OTAsLT
-IwMjk3NDYyMDMsMTg2OTg2OTg1OSwyOTcwNDY1MSwxODY5ODY5
-ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTczMCwzNDMzNjAzODAsLT
-UxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3
-NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1Nj
-MsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0LDM1Nzc0
-OTZdfQ==
+eyJoaXN0b3J5IjpbMTAwNDYxMTgyNSwtMTE2MDY3MDQ5MCwtMj
+AyOTc0NjIwMywxODY5ODY5ODU5LDI5NzA0NjUxLDE4Njk4Njk4
+NTksMTA3MDQ4Mjk0OCwtOTk2NTUxNzMwLDM0MzM2MDM4MCwtNT
+E1NTQxMjAwLDE3MjE4OTYzNjEsMTEzMTAyMjUxMywtMTU5Njc3
+MDQyNSwxNTgyNjA4MDI1LC0xODcwNDQ1NTUsLTM1NTMyMjU2My
+wtMTEzODgwODE1LDU4NzQyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5
+Nl19
 -->
