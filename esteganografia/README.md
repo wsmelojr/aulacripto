@@ -78,13 +78,13 @@ Em seguida, faça a verificação dos *hashes* de ambos os arquivos usando o alg
     $ sha1sum foto.jpg
     $ sha1sum foto-original.jpg
 
-Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela não é perceptível na imagem visual.
+Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela não é perceptível na imagem visual. Isso ocorre porque o *steghide* modif
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjYzNjAxMjcsMTg2OTg2OTg1OSwyOT
-cwNDY1MSwxODY5ODY5ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTcz
-MCwzNDMzNjAzODAsLTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMz
-EwMjI1MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0
-NTU1LC0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNT
-c3MjcxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJd
-fQ==
+eyJoaXN0b3J5IjpbMjc5NDE5MzkyLDE4Njk4Njk4NTksMjk3MD
+Q2NTEsMTg2OTg2OTg1OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAs
+MzQzMzYwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMD
+IyNTEzLC0xNTk2NzcwNDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1
+NSwtMzU1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3Nz
+I3MTU2NCwzNTc3NDk2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
+
 -->
