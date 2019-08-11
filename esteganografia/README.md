@@ -82,10 +82,12 @@ Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia est�
 
 ### Questão 3: Explique com suas palavras como os dígitos menos significativos de uma imagem (LSBs) podem ser usados para guardar um segredo esteganografado.
 
+## Obtendo informações de uma imagem esteganografada
 
+O *steghide* provê um mecanismo de "consulta" de uma imagem,  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTQxNDYxMSwtMjAyOTc0NjIwMywxOD
+eyJoaXN0b3J5IjpbLTM4NzcyODc4NSwtMjAyOTc0NjIwMywxOD
 Y5ODY5ODU5LDI5NzA0NjUxLDE4Njk4Njk4NTksMTA3MDQ4Mjk0
 OCwtOTk2NTUxNzMwLDM0MzM2MDM4MCwtNTE1NTQxMjAwLDE3Mj
 E4OTYzNjEsMTEzMTAyMjUxMywtMTU5Njc3MDQyNSwxNTgyNjA4
