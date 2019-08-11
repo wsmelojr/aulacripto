@@ -51,7 +51,9 @@ O *steghide* funciona com arquivos de imagem e áudio. Atualmente o *steghide* s
 
 Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Com o arquivo de imagem, é necessário criar a mensagem secreta em um arquivo texto. Para isso, crie um arquivo chamado *mensagem.txt* e digite nele sua mensagem secreta (uma frase curta, por exemplo).
 
-Em seguida, procedemos conforme os comandos abaixo.
+Em seguida, procedemos conforme os comandos abaixo:
+
+
 
 
 
@@ -192,9 +194,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMz
-EwMjI1MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0
-NTU1LC0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNT
-c3MjcxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJd
-fQ==
+eyJoaXN0b3J5IjpbMzExODYwMDk2LC01MTU1NDEyMDAsMTcyMT
+g5NjM2MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LDE1ODI2MDgw
+MjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4ODA4MTUsNT
+g3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2LDE5ODAzNzIyOTYs
+MzMwMDY5NjcyXX0=
 -->
