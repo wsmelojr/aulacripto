@@ -45,7 +45,7 @@ Teste se a instalação foi bem sucedida, executando o comando com um parâmetro
 
 Se você consegue ver as informações sobre o comando (versão, parâmetros, etc), então ele está instalado e pronto pra ser usado.
 
-### Adicionando uma mensagem a uma imagem
+### Adicionando uma mensagem secreta a uma imagem
 
 O *steghide* funciona com arquivos de imagem e áudio. Atualmente o *steghide* suporta apenas imagens digitais em formato JPEG e BMP e arquivos de áudio em WAV ou AU. 
 
@@ -78,7 +78,9 @@ Em seguida, faça a verificação dos *hashes* de ambos os arquivos usando o alg
     $ sha1sum foto.jpg
     $ sha1sum foto-original.jpg
 
-Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela n
+Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela não é perceptível na imagem visual.
+
+
 
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -218,10 +220,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0NTE5NDksMTA3MDQ4Mjk0OCwtOTk2NT
-UxNzMwLDM0MzM2MDM4MCwtNTE1NTQxMjAwLDE3MjE4OTYzNjEs
-MTEzMTAyMjUxMywtMTU5Njc3MDQyNSwxNTgyNjA4MDI1LC0xOD
-cwNDQ1NTUsLTM1NTMyMjU2MywtMTEzODgwODE1LDU4NzQyMDU2
-MSw1NzcyNzE1NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMzMDA2OT
-Y3Ml19
+eyJoaXN0b3J5IjpbMTg2OTg2OTg1OSwxMDcwNDgyOTQ4LC05OT
+Y1NTE3MzAsMzQzMzYwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2
+MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LDE1ODI2MDgwMjUsLT
+E4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIw
+NTYxLDU3NzI3MTU2NCwzNTc3NDk2LDE5ODAzNzIyOTYsMzMwMD
+Y5NjcyXX0=
 -->
