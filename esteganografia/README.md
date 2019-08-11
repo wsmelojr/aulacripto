@@ -47,6 +47,7 @@ Se você consegue ver as informações sobre o comando (versão, parâmetros, et
 
 ### Adicionando uma mensagem a uma imagem
 
+O *steghide* funciona com arquivos de imagem e áudio. Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma 
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -185,8 +186,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMT
-g3MDQ0NTU1LC0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1
-NjEsNTc3MjcxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNj
-k2NzJdfQ==
+eyJoaXN0b3J5IjpbMTEyNDE2MTQ2MiwtMTU5Njc3MDQyNSwxNT
+gyNjA4MDI1LC0xODcwNDQ1NTUsLTM1NTMyMjU2MywtMTEzODgw
+ODE1LDU4NzQyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5NiwxOTgwMz
+cyMjk2LDMzMDA2OTY3Ml19
 -->
