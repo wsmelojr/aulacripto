@@ -55,6 +55,7 @@ Em seguida, procedemos conforme os comandos abaixo:
 
     steghide embed -cf foto.jpg -ef mensagem.txt
 
+O *steghide* soicitará uma *passphrase* (correspondente a uma senha ou código de acess
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -193,9 +194,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQzMzYwMzgwLC01MTU1NDEyMDAsMTcyMT
-g5NjM2MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LDE1ODI2MDgw
-MjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4ODA4MTUsNT
-g3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2LDE5ODAzNzIyOTYs
-MzMwMDY5NjcyXX0=
+eyJoaXN0b3J5IjpbMTc0Nzg0NTgyMywzNDMzNjAzODAsLTUxNT
+U0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3NzA0
+MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1NjMsLT
+ExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0LDM1Nzc0OTYs
+MTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
 -->
