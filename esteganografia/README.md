@@ -47,7 +47,7 @@ Se você consegue ver as informações sobre o comando (versão, parâmetros, et
 
 ### Adicionando uma mensagem a uma imagem
 
-O *steghide* funciona com arquivos de imagem e áudio. Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Em seguida, procedemos conforme os comandos abaixo.
+O *steghide* funciona com arquivos de imagem e áudio. Atualmente o *steghide* suporta apenas imagens digitais em formato JPEG e BMP e arquivos de áudio em WAV ou AU. Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Em seguida, procedemos conforme os comandos abaixo.
 
 
 
@@ -188,8 +188,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTAyMjUxMywtMTU5Njc3MDQyNSwxNT
-gyNjA4MDI1LC0xODcwNDQ1NTUsLTM1NTMyMjU2MywtMTEzODgw
-ODE1LDU4NzQyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5NiwxOTgwMz
-cyMjk2LDMzMDA2OTY3Ml19
+eyJoaXN0b3J5IjpbMTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNT
+k2NzcwNDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIy
+NTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2NCwzNT
+c3NDk2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
 -->
