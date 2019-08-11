@@ -57,7 +57,9 @@ Em seguida, procedemos conforme os comandos abaixo:
 
 O *steghide* soicitará uma *passphrase* (correspondente a uma senha ou código de acesso) para proteção da esteganografia. Você deve digitar a *passphrase* e confirmá-la em seguida, conforme o seguinte prompt:
 
-    enter code here
+    Enter passphrase: 
+    Re-Enter passphrase:
+    embedding "mensagem.txt" in "foto.jpg"... done
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -196,9 +198,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzQzMDA4MDMsMzQzMzYwMzgwLC01MT
-U1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNTk2Nzcw
-NDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC
-0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2
-LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
+eyJoaXN0b3J5IjpbLTk5NjU1MTczMCwzNDMzNjAzODAsLTUxNT
+U0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3NzA0
+MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1NjMsLT
+ExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0LDM1Nzc0OTYs
+MTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
 -->
