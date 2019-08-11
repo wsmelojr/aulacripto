@@ -80,7 +80,7 @@ Em seguida, faça a verificação dos *hashes* de ambos os arquivos usando o alg
 
 Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela não é perceptível na imagem visual.
 
-	
+
 
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -220,10 +220,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3MDQ2NTEsMTg2OTg2OTg1OSwxMDcwND
-gyOTQ4LC05OTY1NTE3MzAsMzQzMzYwMzgwLC01MTU1NDEyMDAs
-MTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LDE1OD
-I2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4ODA4
-MTUsNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2LDE5ODAzNz
-IyOTYsMzMwMDY5NjcyXX0=
+eyJoaXN0b3J5IjpbMTg2OTg2OTg1OSwyOTcwNDY1MSwxODY5OD
+Y5ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTczMCwzNDMzNjAzODAs
+LTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OT
+Y3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1
+NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0LDM1Nz
+c0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
 -->
