@@ -84,14 +84,19 @@ Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia est�
 
 ## Obtendo informações de uma imagem esteganografada
 
-O *steghide* provê um mecanismo de "consulta" de um arquivo (imagem ou àudio), de modo a tentar extrair uma mensagem secreta do mesmo. Entretanto, como a mensagem estará também encriptada dentro do arquivo principal, este processo não é 
+O *steghide* provê um mecanismo de "consulta" de um arquivo (imagem ou àudio), de modo a tentar extrair uma mensagem secreta do mesmo. Entretanto, como a mensagem estará também encriptada dentro do arquivo principal, este processo não é tão trivial, e acaba sempre dependendo do conhecimento da *passphrase*.
 
+Para fazer essa consulta, utilize a seguinte sintaxe de comando:
+
+    steghide info foto-original.jpg
+
+Note que o *steghide* vai ler informações básicas d
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTMzNDE1NywtMTE2MDY3MDQ5MCwtMj
-AyOTc0NjIwMywxODY5ODY5ODU5LDI5NzA0NjUxLDE4Njk4Njk4
-NTksMTA3MDQ4Mjk0OCwtOTk2NTUxNzMwLDM0MzM2MDM4MCwtNT
-E1NTQxMjAwLDE3MjE4OTYzNjEsMTEzMTAyMjUxMywtMTU5Njc3
-MDQyNSwxNTgyNjA4MDI1LC0xODcwNDQ1NTUsLTM1NTMyMjU2My
-wtMTEzODgwODE1LDU4NzQyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5
-Nl19
+eyJoaXN0b3J5IjpbNjQ0MzM4MzMxLC0xMTYwNjcwNDkwLC0yMD
+I5NzQ2MjAzLDE4Njk4Njk4NTksMjk3MDQ2NTEsMTg2OTg2OTg1
+OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAsMzQzMzYwMzgwLC01MT
+U1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNTk2Nzcw
+NDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC
+0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2
+XX0=
 -->
