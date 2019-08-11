@@ -57,7 +57,7 @@ Com o arquivo de imagem em mãos, é necessário criar a mensagem secreta em um 
 
 Em seguida, procedemos executando o seguinte comando:
 
-    steghide embed -cf foto.jpg -ef mensagem.txt
+    $ steghide embed -cf foto.jpg -ef mensagem.txt
 
 O *steghide* soicitará uma *passphrase* (correspondente a uma senha ou código de acesso) para proteção da esteganografia. Você deve digitar a *passphrase* e confirmá-la em seguida, conforme o seguinte prompt:
 
@@ -67,7 +67,7 @@ O *steghide* soicitará uma *passphrase* (correspondente a uma senha ou código 
 
 O processo reverso, ou seja, a extração da mensagem secreta, pode ser feito usando-se o seguinte comando:
 
-    steghide extract -sf foto.jpg
+    $ steghide extract -sf foto.jpg
 
 Observe que, ao executar esse comando, o *steghide* solicitará a *passphrase* usada no momento da criação da esteganografia. Sem a *passphrase* correta, a extração da esteganografia não vai funcionar!
 
@@ -75,9 +75,10 @@ Faça uma comparação visual entre os dois arquivos. Abra ambas as imagens lado
 
 Em seguida, faça a verificação dos *hashes* de ambos os arquivos usando o algoritmo SHA1:
 
-    enter code here
+    $ sha1sum foto.jpg
+    $ sha1sum foto-original.jpg
 
-
+Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela n
 
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -217,10 +218,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzMDUzODkyLDEwNzA0ODI5NDgsLTk5Nj
-U1MTczMCwzNDMzNjAzODAsLTUxNTU0MTIwMCwxNzIxODk2MzYx
-LDExMzEwMjI1MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMT
-g3MDQ0NTU1LC0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1
-NjEsNTc3MjcxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNj
-k2NzJdfQ==
+eyJoaXN0b3J5IjpbNTY0NTE5NDksMTA3MDQ4Mjk0OCwtOTk2NT
+UxNzMwLDM0MzM2MDM4MCwtNTE1NTQxMjAwLDE3MjE4OTYzNjEs
+MTEzMTAyMjUxMywtMTU5Njc3MDQyNSwxNTgyNjA4MDI1LC0xOD
+cwNDQ1NTUsLTM1NTMyMjU2MywtMTEzODgwODE1LDU4NzQyMDU2
+MSw1NzcyNzE1NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMzMDA2OT
+Y3Ml19
 -->
