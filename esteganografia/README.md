@@ -88,15 +88,23 @@ O *steghide* provê um mecanismo de "consulta" de um arquivo (imagem ou àudio),
 
 Para fazer essa consulta, utilize a seguinte sintaxe de comando:
 
-    steghide info foto-original.jpg
+    steghide info foto.jpg
 
-Note que o *steghide* vai ler informações básicas d
+Note que o *steghide* vai ler informações básicas da imagem e perguntar se você deseja procurar por alguma esteganografia dentro dela. Se confirmar que deseja, ele automaticamente pedirá que você informe a *passphrase* de tentativa.
+
+    "foto.jpg":
+    format: jpeg
+      capacity: 21,8 KB
+Try to get information about embedded data ? (y/n) y
+Enter passphrase: 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ0MzM4MzMxLC0xMTYwNjcwNDkwLC0yMD
-I5NzQ2MjAzLDE4Njk4Njk4NTksMjk3MDQ2NTEsMTg2OTg2OTg1
-OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAsMzQzMzYwMzgwLC01MT
-U1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNTk2Nzcw
-NDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC
-0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2NCwzNTc3NDk2
-XX0=
+eyJoaXN0b3J5IjpbLTEwNDk0MDM0NzgsLTExNjA2NzA0OTAsLT
+IwMjk3NDYyMDMsMTg2OTg2OTg1OSwyOTcwNDY1MSwxODY5ODY5
+ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTczMCwzNDMzNjAzODAsLT
+UxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3
+NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1Nj
+MsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0LDM1Nzc0
+OTZdfQ==
 -->
