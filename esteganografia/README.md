@@ -78,13 +78,16 @@ Em seguida, faça a verificação dos *hashes* de ambos os arquivos usando o alg
     $ sha1sum foto.jpg
     $ sha1sum foto-original.jpg
 
-Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela não é perceptível na imagem visual. Isso ocorre porque o *steghide* modifica os bits menos significativos da imagem (LSB). Para entender melhor o processo 
+Os codigos *hash* mostram que os arquivos são diferentes. A esteganografia está lá, mas ela não é perceptível na imagem visual. Isso ocorre porque o *steghide* modifica os bits menos significativos da imagem (LSB). Para entender melhor o processo, leia o começo desse [tuorial](https://www.cybrary.it/0p3n/hide-secret-message-inside-image-using-lsb-steganography/). Está em inglês, mas o Google Translator é seu amigo!
+
+### Questão 3: Explique com suas palavras como os d
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjk3NDYyMDMsMTg2OTg2OTg1OSwyOT
-cwNDY1MSwxODY5ODY5ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTcz
-MCwzNDMzNjAzODAsLTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMz
-EwMjI1MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0
-NTU1LC0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNT
-c3MjcxNTY0LDM1Nzc0OTYsMTk4MDM3MjI5NiwzMzAwNjk2NzJd
-fQ==
+eyJoaXN0b3J5IjpbLTgzMzg0OTczMiwtMjAyOTc0NjIwMywxOD
+Y5ODY5ODU5LDI5NzA0NjUxLDE4Njk4Njk4NTksMTA3MDQ4Mjk0
+OCwtOTk2NTUxNzMwLDM0MzM2MDM4MCwtNTE1NTQxMjAwLDE3Mj
+E4OTYzNjEsMTEzMTAyMjUxMywtMTU5Njc3MDQyNSwxNTgyNjA4
+MDI1LC0xODcwNDQ1NTUsLTM1NTMyMjU2MywtMTEzODgwODE1LD
+U4NzQyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5NiwxOTgwMzcyMjk2
+XX0=
 -->
