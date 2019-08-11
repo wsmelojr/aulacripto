@@ -94,13 +94,17 @@ Note que o *steghide* vai ler informações básicas da imagem e perguntar se vo
 
     "foto.jpg":
     format: jpeg
-      capacity: 21,8 KB
-Try to get information about embedded data ? (y/n) y
-Enter passphrase: 
+    capacity: 21,8 KB
+    Try to get information about embedded data ? (y/n) y
+    Enter passphrase: 
 
+Se você informar a *passphrase* correta, o nome do arquivo contendo a
+
+
+### Questão 4: Explique com suas palavras como os dígitos menos significativos de uma imagem (LSBs) podem ser usados para guardar um segredo esteganografado.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDk0MDM0NzgsLTExNjA2NzA0OTAsLT
+eyJoaXN0b3J5IjpbLTE1Mjk2MDc4MjIsLTExNjA2NzA0OTAsLT
 IwMjk3NDYyMDMsMTg2OTg2OTg1OSwyOTcwNDY1MSwxODY5ODY5
 ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTczMCwzNDMzNjAzODAsLT
 UxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3
