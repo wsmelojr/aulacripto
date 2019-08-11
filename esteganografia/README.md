@@ -61,6 +61,11 @@ O *steghide* soicitará uma *passphrase* (correspondente a uma senha ou código 
     Re-Enter passphrase:
     embedding "mensagem.txt" in "foto.jpg"... done
 
+O processo reverso, ou seja, a extração da mensagem secreta, pode ser feito usando-se o seguinte comando:
+
+    steghide extract -sf foto.jpg
+
+Observe que, ao executar esse comando, o *steghide* solicitará a *passphrase* usada no momento da criaçã
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 ## Create files and folders
@@ -198,9 +203,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjU1MTczMCwzNDMzNjAzODAsLTUxNT
-U0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3NzA0
-MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1NjMsLT
-ExMzg4MDgxNSw1ODc0MjA1NjEsNTc3MjcxNTY0LDM1Nzc0OTYs
-MTk4MDM3MjI5NiwzMzAwNjk2NzJdfQ==
+eyJoaXN0b3J5IjpbMzMxMTY2NTM3LC05OTY1NTE3MzAsMzQzMz
+YwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEz
+LC0xNTk2NzcwNDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMz
+U1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2
+NCwzNTc3NDk2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
 -->
