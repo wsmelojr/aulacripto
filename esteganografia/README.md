@@ -49,7 +49,9 @@ Se você consegue ver as informações sobre o comando (versão, parâmetros, et
 
 O *steghide* funciona com arquivos de imagem e áudio. Atualmente o *steghide* suporta apenas imagens digitais em formato JPEG e BMP e arquivos de áudio em WAV ou AU. 
 
-Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Com o arquivo de imagem, é necessário criar a mensagem secreta em um arquivo texto. Para isso, crie um arquivo chamado *mensagem.txt* e digite nele sua mensagem secreta (uma frase curta, por exemplo).
+Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Para realizar a prática deste laboratório de forma correta, crie uma cópia do arquivo de *foto.jpg* c. 
+
+Com o arquivo de imagem em mãos, é necessário criar a mensagem secreta em um arquivo texto. Para isso, crie um arquivo chamado *mensagem.txt* e digite nele sua mensagem secreta (uma frase curta, por exemplo).
 
 Em seguida, procedemos conforme os comandos abaixo:
 
@@ -65,7 +67,9 @@ O processo reverso, ou seja, a extração da mensagem secreta, pode ser feito us
 
     steghide extract -sf foto.jpg
 
-Observe que, ao executar esse comando, o *steghide* solicitará a *passphrase* usada no momento da criaçã
+Observe que, ao executar esse comando, o *steghide* solicitará a *passphrase* usada no momento da criação da esteganografia.
+
+
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 ## Create files and folders
@@ -203,9 +207,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxMTY2NTM3LC05OTY1NTE3MzAsMzQzMz
-YwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEz
-LC0xNTk2NzcwNDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMz
-U1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3MTU2
-NCwzNTc3NDk2LDE5ODAzNzIyOTYsMzMwMDY5NjcyXX0=
+eyJoaXN0b3J5IjpbLTE1NjY2MjQzNCwtOTk2NTUxNzMwLDM0Mz
+M2MDM4MCwtNTE1NTQxMjAwLDE3MjE4OTYzNjEsMTEzMTAyMjUx
+MywtMTU5Njc3MDQyNSwxNTgyNjA4MDI1LC0xODcwNDQ1NTUsLT
+M1NTMyMjU2MywtMTEzODgwODE1LDU4NzQyMDU2MSw1NzcyNzE1
+NjQsMzU3NzQ5NiwxOTgwMzcyMjk2LDMzMDA2OTY3Ml19
 -->
