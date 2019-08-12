@@ -1,4 +1,5 @@
-# Esteganografia
+*Data de aula: 12/8*
+*Prof. Wilson (wsjunior@inmetro.gov.br)*
 
 Esteganografia é a ciência de ocultar uma informação dentro de outra informação. Ela pode ser descrita como uma forma de **segurança por obscuridade**. Neste caso, a segurança não está essencialmente baseada na dificuldade de "quebra" de um algoritmo de criptografia, e sim no fato de que apenas o correto destinatário da mensagem sabe que aquela informação esconde algum segredo.
 
@@ -111,11 +112,11 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
 ### Questão 5: Escolha um dos tópicos extras e explique com suas próprias palavras o que você aprendeu de novo que ainda não havia sido abordado na aula de hoje.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDY3OTA4NjQsNDM4MTc0NTk3LDY3MD
-c0NTY1OCwxOTE5MzUzOTQzLC0xMTYwNjcwNDkwLC0yMDI5NzQ2
-MjAzLDE4Njk4Njk4NTksMjk3MDQ2NTEsMTg2OTg2OTg1OSwxMD
-cwNDgyOTQ4LC05OTY1NTE3MzAsMzQzMzYwMzgwLC01MTU1NDEy
-MDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LD
-E1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4
-ODA4MTVdfQ==
+eyJoaXN0b3J5IjpbLTQ0MTEyODgxNCw0MzgxNzQ1OTcsNjcwNz
+Q1NjU4LDE5MTkzNTM5NDMsLTExNjA2NzA0OTAsLTIwMjk3NDYy
+MDMsMTg2OTg2OTg1OSwyOTcwNDY1MSwxODY5ODY5ODU5LDEwNz
+A0ODI5NDgsLTk5NjU1MTczMCwzNDMzNjAzODAsLTUxNTU0MTIw
+MCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3NzA0MjUsMT
+U4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1NjMsLTExMzg4
+MDgxNV19
 -->
