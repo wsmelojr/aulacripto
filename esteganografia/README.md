@@ -102,8 +102,10 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
 
 ### Questão 4: Repita os procedimentos para algum arquivo de áudio no formato WAV.  Você pode obter qualquer arquivo de exemplo na Internet, ou criar um usando o gravador de som. Compare o áudio que você ouve no arquivo original e no arquivo esteganografado. Há alguma diferença?
 
+## Prática de fixação dos conhecimentos
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODM0Nzc5MywxOTE5MzUzOTQzLC0xMT
+eyJoaXN0b3J5IjpbMTkyOTIxMzU2NiwxOTE5MzUzOTQzLC0xMT
 YwNjcwNDkwLC0yMDI5NzQ2MjAzLDE4Njk4Njk4NTksMjk3MDQ2
 NTEsMTg2OTg2OTg1OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAsMz
 QzMzYwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIy
