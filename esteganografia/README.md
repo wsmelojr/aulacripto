@@ -104,14 +104,15 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
 
 ## Tópicos extras
 
- 1. Existe um projeto no Github que se propõe a ser uma ferramenta para detecção e quebra de mensagens esteganofradas! Você po
+ 1. Existe um projeto no Github que se propõe a ser uma ferramenta para detecção e quebra de mensagens esteganofradas! Você pode dar uma espiada [aqui](https://github.com/abeluck/stegdetect)!
+ 2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODkxNTYxNCwxOTE5MzUzOTQzLC0xMT
-YwNjcwNDkwLC0yMDI5NzQ2MjAzLDE4Njk4Njk4NTksMjk3MDQ2
-NTEsMTg2OTg2OTg1OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAsMz
-QzMzYwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIy
-NTEzLC0xNTk2NzcwNDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NS
-wtMzU1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3
-MTU2NF19
+eyJoaXN0b3J5IjpbNjcwNzQ1NjU4LDE5MTkzNTM5NDMsLTExNj
+A2NzA0OTAsLTIwMjk3NDYyMDMsMTg2OTg2OTg1OSwyOTcwNDY1
+MSwxODY5ODY5ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTczMCwzND
+MzNjAzODAsLTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1
+MTMsLTE1OTY3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC
+0zNTUzMjI1NjMsLTExMzg4MDgxNSw1ODc0MjA1NjEsNTc3Mjcx
+NTY0XX0=
 -->
