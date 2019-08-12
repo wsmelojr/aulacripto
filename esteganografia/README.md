@@ -100,13 +100,14 @@ Note que o *steghide* vai ler informações básicas da imagem e perguntar se vo
 
 Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem secreta será exibido. Caso contrário, o *steghide* notifica que não consegue extrair qualquer informação desse arquivo.
 
-### Questão 4: Repita os procedimentos para algum arquivo de áudio no formato WAV.  Você pode obter qualquer arquivo de exemplo na Internet, ou criar um usando o gravador de som. 
+### Questão 4: Repita os procedimentos para algum arquivo de áudio no formato WAV.  Você pode obter qualquer arquivo de exemplo na Internet, ou criar um usando o gravador de som. Compare o áudio que você ouve no arquivo original e no arquivo esteganografado. Há alguma diferença?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTM1Mzk0MywtMTE2MDY3MDQ5MCwtMj
-AyOTc0NjIwMywxODY5ODY5ODU5LDI5NzA0NjUxLDE4Njk4Njk4
-NTksMTA3MDQ4Mjk0OCwtOTk2NTUxNzMwLDM0MzM2MDM4MCwtNT
-E1NTQxMjAwLDE3MjE4OTYzNjEsMTEzMTAyMjUxMywtMTU5Njc3
-MDQyNSwxNTgyNjA4MDI1LC0xODcwNDQ1NTUsLTM1NTMyMjU2My
-wtMTEzODgwODE1LDU4NzQyMDU2MSw1NzcyNzE1NjQsMzU3NzQ5
-Nl19
+eyJoaXN0b3J5IjpbMTczODM0Nzc5MywxOTE5MzUzOTQzLC0xMT
+YwNjcwNDkwLC0yMDI5NzQ2MjAzLDE4Njk4Njk4NTksMjk3MDQ2
+NTEsMTg2OTg2OTg1OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAsMz
+QzMzYwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIy
+NTEzLC0xNTk2NzcwNDI1LDE1ODI2MDgwMjUsLTE4NzA0NDU1NS
+wtMzU1MzIyNTYzLC0xMTM4ODA4MTUsNTg3NDIwNTYxLDU3NzI3
+MTU2NF19
 -->
