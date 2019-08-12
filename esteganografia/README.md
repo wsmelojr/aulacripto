@@ -1,4 +1,5 @@
 *Data de aula: 12/8*
+
 *Prof. Wilson (wsjunior@inmetro.gov.br)*
 
 # Esteganografia
@@ -114,7 +115,7 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
 ### Questão 5: Escolha um dos tópicos extras e explique com suas próprias palavras o que você aprendeu de novo que ainda não havia sido abordado na aula de hoje.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE5NTIwNDMsNDM4MTc0NTk3LDY3MD
+eyJoaXN0b3J5IjpbLTIwMjE1MjY0MjUsNDM4MTc0NTk3LDY3MD
 c0NTY1OCwxOTE5MzUzOTQzLC0xMTYwNjcwNDkwLC0yMDI5NzQ2
 MjAzLDE4Njk4Njk4NTksMjk3MDQ2NTEsMTg2OTg2OTg1OSwxMD
 cwNDgyOTQ4LC05OTY1NTE3MzAsMzQzMzYwMzgwLC01MTU1NDEy
