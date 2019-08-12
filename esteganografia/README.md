@@ -108,14 +108,14 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
  2. Tem gente usando esteganografia pra esconder *malwares*! Veja essa [notícia](https://threatpost.com/steganography-combat/143096/)!
  3. Esse [vídeo tutorial](https://www.youtube.com/watch?v=xepNoHgNj0w&t=) trás interessantes tópicos sobre as origens da esteganografia, e também ensina como fazer um programa em Python para isso.
 
-### Questão 5: Escolha um dos tópicos extras e explique com suas próprias palavras o que 
+### Questão 5: Escolha um dos tópicos extras e explique com suas próprias palavras o que você aprendeu de novo que ainda não havia sido abordado na aula de hoje.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4OTczODE1Miw0MzgxNzQ1OTcsNjcwNz
-Q1NjU4LDE5MTkzNTM5NDMsLTExNjA2NzA0OTAsLTIwMjk3NDYy
-MDMsMTg2OTg2OTg1OSwyOTcwNDY1MSwxODY5ODY5ODU5LDEwNz
-A0ODI5NDgsLTk5NjU1MTczMCwzNDMzNjAzODAsLTUxNTU0MTIw
-MCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLTE1OTY3NzA0MjUsMT
-U4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUzMjI1NjMsLTExMzg4
-MDgxNV19
+eyJoaXN0b3J5IjpbLTExNDY3OTA4NjQsNDM4MTc0NTk3LDY3MD
+c0NTY1OCwxOTE5MzUzOTQzLC0xMTYwNjcwNDkwLC0yMDI5NzQ2
+MjAzLDE4Njk4Njk4NTksMjk3MDQ2NTEsMTg2OTg2OTg1OSwxMD
+cwNDgyOTQ4LC05OTY1NTE3MzAsMzQzMzYwMzgwLC01MTU1NDEy
+MDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LD
+E1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4
+ODA4MTVdfQ==
 -->
