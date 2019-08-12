@@ -102,12 +102,12 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
 
 ### Questão 4: Repita os procedimentos para algum arquivo de áudio no formato WAV.  Você pode obter qualquer arquivo de exemplo na Internet, ou criar um usando o gravador de som. Compare o áudio que você ouve no arquivo original e no arquivo esteganografado. Há alguma diferença?
 
-## Prática de fixação dos conhecimentos
+## Tópicos extras
 
- 1. List item
+ 1. Existe um projeto no Github que se propõe a ser uma ferramenta para detecção e quebra de mensagens esteganofradas! Você po
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjE4MTUwMCwxOTE5MzUzOTQzLC0xMT
+eyJoaXN0b3J5IjpbMTA4ODkxNTYxNCwxOTE5MzUzOTQzLC0xMT
 YwNjcwNDkwLC0yMDI5NzQ2MjAzLDE4Njk4Njk4NTksMjk3MDQ2
 NTEsMTg2OTg2OTg1OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAsMz
 QzMzYwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIy
