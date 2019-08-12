@@ -104,8 +104,10 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
 
 ## Prática de fixação dos conhecimentos
 
+ 1. List item
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyOTIxMzU2NiwxOTE5MzUzOTQzLC0xMT
+eyJoaXN0b3J5IjpbLTg4MjE4MTUwMCwxOTE5MzUzOTQzLC0xMT
 YwNjcwNDkwLC0yMDI5NzQ2MjAzLDE4Njk4Njk4NTksMjk3MDQ2
 NTEsMTg2OTg2OTg1OSwxMDcwNDgyOTQ4LC05OTY1NTE3MzAsMz
 QzMzYwMzgwLC01MTU1NDEyMDAsMTcyMTg5NjM2MSwxMTMxMDIy
