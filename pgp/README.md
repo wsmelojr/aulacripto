@@ -1,3 +1,8 @@
+---
+
+
+---
+
 <p><em>Data das aulas: 19/8 e 21/8<br>
 Prof. Sérgio (<a href="mailto:smcamara@inmetro.gov.br">smcamara@inmetro.gov.br</a>)</em></p>
 <h1 id="pretty-good-privacy-pgp">Pretty Good Privacy (PGP)</h1>
@@ -43,10 +48,12 @@ Escolher "Armored PGP keys"
 <li>Adquirir as chaves públicas de outros 5 alunos em sala.</li>
 </ol>
 <h2 id="missão-4">Missão 4</h2>
-<p>O <em>fingerprint</em> da chave pública do prof. Sérgio é:</p>
+<p>A <em>Key ID</em> da chave pública do prof. Sérgio é:</p>
+<pre><code>dreadful midsummer classic fascinate
+</code></pre>
 <ol>
-<li>Qual é o <em>fingerprint</em> em hexadecimal?</li>
-<li>Ache a chave pública correta do professor no servidor de chaves <a href="https://keyserver.ubuntu.com/">https://keyserver.ubuntu.com/</a> e importe ao seu chaveiro.</li>
+<li>Qual é a <em>Key ID</em> em hexadecimal?</li>
+<li>Ache a chave pública correta do professor no servidor de chaves <a href="https://keyserver.ubuntu.com/">https://keyserver.ubuntu.com/</a> e importe ao seu chaveiro. Dê <em>print</em>.</li>
 <li>Cite uma aplicação prática para a PGP <em>word list</em>.</li>
 </ol>
 <h2 id="missão-5">Missão 5</h2>
