@@ -1,8 +1,3 @@
----
-
-
----
-
 <p><em>Data das aulas: 19/8 e 21/8<br>
 Prof. Sérgio (<a href="mailto:smcamara@inmetro.gov.br">smcamara@inmetro.gov.br</a>)</em></p>
 <h1 id="pretty-good-privacy-pgp">Pretty Good Privacy (PGP)</h1>
