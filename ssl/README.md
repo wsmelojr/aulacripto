@@ -87,7 +87,7 @@ Já instalamos o _vsftpd_, e esse será a ferramenta utilizada para configurar o
 
 4. Ative a captura do Wireshark.
 5. Conecte-se com o Filezilla em seu próprio servidor de FTP com seu usuário local.
-6. Identifique os pacotes que fazem parte do processo de autenticação e que carregam as credenciais. Dê um print.
+6. Identifique os pacotes que fazem parte do processo de autenticação e que carregam as credenciais. Dê um print no TCP Stream (clique com o botão direito em cima do pacote --> Follow --> Tcp Stream).
 
 ## Missão 5
 
