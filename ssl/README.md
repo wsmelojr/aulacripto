@@ -51,7 +51,7 @@ Para realizar as missões descritas abaixo, primeiramente instale o software *Wi
 
 3. Questão: Qual protocolo pode ser utilizado para mitigar tal risco para o usuário? Explique.
 
-4. Encontre uma página na internet que implemente o protocolo respondido acima e repira os passos 1 e 2.
+4. Encontre uma página na internet que implemente o protocolo respondido acima e repira os passos 1 e 2. Dê um print no TCP Stream (clique com o botão direito em cima do pacote --> Follow --> Tcp Stream).
 
 
 ## Missão 3
@@ -87,7 +87,7 @@ Já instalamos o _vsftpd_, e esse será a ferramenta utilizada para configurar o
 
 4. Ative a captura do Wireshark.
 5. Conecte-se com o Filezilla em seu próprio servidor de FTP com seu usuário local.
-6. Identifique os pacotes que fazem parte do processo de autenticação e que carregam as credenciais. Dê um print no TCP Stream (clique com o botão direito em cima do pacote --> Follow --> Tcp Stream).
+6. Identifique os pacotes que fazem parte do processo de autenticação e que carregam as credenciais. Dê um print.
 
 ## Missão 5
 
