@@ -20,7 +20,7 @@ Sobre a entrega das respostas:
 
 Para realizar as missões descritas abaixo, primeiramente instale o software *Wireshark*, *vsftpd* e *Filezilla*.
 
-    > sudo apt install wireshark vsftpd filezilla
+`$ sudo apt install wireshark vsftpd filezilla`
 
 
 ## Missão 1
@@ -33,7 +33,7 @@ Para realizar as missões descritas abaixo, primeiramente instale o software *Wi
 
   `$ nc 127.0.0.1 9000`
 
-3. Através do _Wireshark_, intercepte e identifique (use o filtro se precisar) os pacotes que compõe o Three-way Handshake (Handshake de três vias) da conexão TCP aberta. Dê um print.
+3. Abra o Wireshark em modo super-usuário ($ sudo wireshark). Através do _Wireshark_, intercepte e identifique (use o filtro se precisar) os pacotes que compõe o Three-way Handshake (Handshake de três vias) da conexão TCP aberta. Dê um print.
 
 
 ![](assets/markdown-img-paste-20190903145954964.png)
@@ -112,10 +112,11 @@ Para trabalhar de maneira segura, usaremos então o _File Transfer Protocol Secu
 
 
 ## Links interessantes:
-https://www.wikihow.com/Set-up-an-FTP-Server-in-Ubuntu-Linux
-https://glaucocustodio.github.io/2013/06/22/instalando-e-configurando-servidor-ftp-com-vsftpd-no-linux/
-https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-16-04
-https://help.ubuntu.com/lts/serverguide/ftp-server.html
-https://www.lifewire.com/uses-of-linux-command-ftp-2201101
-https://ourcodeworld.com/articles/read/181/what-is-ftps-ftp-sftp-and-what-is-the-difference-between-them
-https://sempreupdate.com.br/como-instalar-um-servidor-ftp-ubuntu/
+https://www.wikihow.com/Set-up-an-FTP-Server-in-Ubuntu-Linux <br>
+https://glaucocustodio.github.io/2013/06/22/instalando-e-configurando-servidor-ftp-com-vsftpd-no-linux/ <br>
+https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-16-04 <br>
+https://help.ubuntu.com/lts/serverguide/ftp-server.html <br>
+https://www.lifewire.com/uses-of-linux-command-ftp-2201101 <br>
+https://ourcodeworld.com/articles/read/181/what-is-ftps-ftp-sftp-and-what-is-the-difference-between-them <br>
+https://sempreupdate.com.br/como-instalar-um-servidor-ftp-ubuntu/ <br>
+https://www.computerhope.com/unix/nc.htm <br>
