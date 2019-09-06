@@ -79,6 +79,8 @@ Já instalamos o _vsftpd_, e esse será a ferramenta utilizada para configurar o
 2. Habilite as seguintes linhas do arquivo:
 
   `write_enable=YES`
+  `chroot_local_user=YES`
+  `allow_writeable_chroot=YES` (adicione se não encontrar)
 
 3. Restarte o serviço para que as alterações tenham efeito:
 
