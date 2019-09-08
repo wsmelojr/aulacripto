@@ -1,0 +1,30 @@
+# Configuracao de Blockchain - LaSIGE (deploy na Quinta)
+#
+# ---------------------------------------------------------------------------
+# "OrdererOrgs" - Define as organizacoes gerenciando os peers de consenso
+# ---------------------------------------------------------------------------
+OrdererOrgs:
+  # ---------------------------------------------------------------------------
+  # Orderer
+  # ---------------------------------------------------------------------------
+  - Name: Orderer
+    # Usando quinta.com como dominio raiz para todos os peers
+    Domain: ptb.de
+    Specs:
+      - Hostname: orderer
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Define as organizacoes que gerenciam os peers
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  # ---------------------------------------------------------------------------
+  # Sao criadas duas organizacoes (LaSIGE e Inmetro), cada uma com 4 peers
+  # ---------------------------------------------------------------------------
+  - Name: PTB
+    Domain: ptb.de
+    Template:
+      # Define o numero de peers
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+    Users:
+      Count: 0
