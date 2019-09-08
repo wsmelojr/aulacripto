@@ -42,7 +42,7 @@ Em seguida, execute o script:
 ```console
 ./mspPTB.sh
 ```
-
+O 
 This script uses [configtx.yaml](blockchain/configtx.yaml) and [crypto-config-ptb.yaml](blockchain/crypto-config-ptb.yaml) to create the MSP certificates in the folder (blockchain/crypto-config). It also generates the genesis block file *ptb-genesis.block* and the channel configuration file *ptb-channel.tx*. Noticed that this script depends on the tools installed together with Fabric. The script *installFabric.sh* executed previously is expected to modify your $PATH variable and enable the direct execution of the Fabric tools. If this does not happen, try to fix the $PATH manually. The tools usually are located in the folder /$HOME/fabric_samples/bin.
 
 ### 3. Manage the docker containers
@@ -216,5 +216,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzEyNjA3NV19
+eyJoaXN0b3J5IjpbLTcyNzI0NTY0MiwtMTk3MTI2MDc1XX0=
 -->
