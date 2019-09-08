@@ -10,6 +10,7 @@ A parte teórica do Hyperledger Fabric foi apresentada na aula sobre [blockchain
 
 ## Usando uma rede blockchain customizada
 
+Nosso experimento usa uma rede blockchain bastante simples, que possui apenas dois *peers* (um deles funciona como *endorser*)
 We use a very simple Fabric blockchain network with two ordinary peers (one of them being an endorser) and the solo orderer service. We also use [couchdb](https://hyperledger-fabric.readthedocs.io/en/release-1.4/couchdb_tutorial.html) containers to improve the performance on storing the ledger state on each peer.
 
 All the configuration files related to the blockchain network  are in the folder [blockchain](blockchain). The main files are:
@@ -223,5 +224,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMDc5NDI5NV19
+eyJoaXN0b3J5IjpbMTY5NjYwMjE4NV19
 -->
