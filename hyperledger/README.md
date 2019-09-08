@@ -10,11 +10,11 @@ A parte teórica do Hyperledger Fabric foi apresentada na aula sobre [blockchain
 
 ## Usando uma rede blockchain customizada
 
-Nosso experimento usa uma rede blockchain bastante simples, que possui apenas dois *peers* (um deles funciona como *endorser*) e usa o serviço *solo orderer* para implementar o consenso da rede. Nós também usamos containers [couchdb](https://hyperledger-fabric.readthedocs.io/en/release-1.4/couchdb_tutorial.html) para otimizar o desempenho durante o armazenamento de informações do ledger.
+Nosso experimento usa uma rede blockchain bastante simples, que possui apenas dois *peers* (um deles funciona como *endorser*) e usa o serviço *solo orderer* para implementar o consenso da rede. Nós também usamos containers [couchdb](https://hyperledger-fabric.readthedocs.io/en/release-1.4/couchdb_tutorial.html) para otimizar o desempenho durante o armazenamento de informações no ledger.
 
-All the configuration files related to the blockchain network  are in the folder [blockchain](blockchain). The main files are:
+Os arquivos associados à configuração da nossa rede blockchain são os seguintes:
 
-* [configtx.yaml](blockchain/configtx.yaml): contains the network profile of our Fabric blockchain network.
+* [configtx.yaml](configtx.yaml): contém o *profile* da nossa rede Fabric.
 * [crypto-config-ptb.yaml](blockchain/crypto-config-ptb.yaml): contains the MSP (Membership Service Provider) configuration. We generate all the digital certificates from it.
 * [docker-compose-ptb.yaml](blockchain/docker-compose-ptb.yaml): contains the docker containers configuration. It extends the file [peer-base.yaml](blockchain/peer-base.yaml) which constitutes a template of standard configuration items.
 
@@ -223,5 +223,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjE0Mzg3MjNdfQ==
+eyJoaXN0b3J5IjpbLTE4NTMyNTg2MThdfQ==
 -->
