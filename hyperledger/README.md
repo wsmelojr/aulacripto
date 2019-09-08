@@ -1,12 +1,12 @@
 *Data de aula: 9 e 11/9*
-*Prof. Wilson ([wsjunior@inmetro.gov.br](mailto:wsjunior@inmetro.gov.br))*
-*Data de aula: 12/8*
 
-*Prof. Wilson (wsjunior@inmetro.gov.br)*
+*Prof. Wilson ([wsjunior@inmetro.gov.br](mailto:wsjunior@inmetro.gov.br))*
 
 # Hyperledger Fabric
 
-Esse plano de aulas tem como objetivo apresentar noções preliminares sobre como configurar e gerenciar uma rede blockchain usando a plataforma Hyperledger Fabric.  Nós adotamos a versão [Hyperledger Fabric 1.4 LTS](https://hyperledger-fabric.readthedocs.io/en/release-1.4/). Esta é uma versão *long term stable*
+Esse plano de aulas tem como objetivo apresentar noções preliminares sobre como configurar e gerenciar uma rede blockchain usando a plataforma Hyperledger Fabric.  Nós adotamos a versão [Hyperledger Fabric 1.4 LTS](https://hyperledger-fabric.readthedocs.io/en/release-1.4/). Esta é uma versão *long term stable*, o que significa que deve se manter estável por pelo menos 2 anos.
+
+A parte teórica do Hyperledger Fabric foi apresentada na aula sobre blockchains
 
 
  aula de hoje 
@@ -237,5 +237,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzQ1ODY0NzRdfQ==
+eyJoaXN0b3J5IjpbLTMzNDI0MDMyOV19
 -->
