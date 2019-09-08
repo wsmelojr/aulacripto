@@ -22,9 +22,7 @@ O experimento deve ser executado conforme os passos descritos a seguir.
 
 ### 1. Prepare sua máquina para executar o Fabric
 
-If you are working inside the PTB network, you need to configure your proxy settings for every tool that we will use in the next steps. But... smile! We create a [guide](prerequirements/PTB-Proxy.md) to make your life easier and save the time you would lose by solving this problem. Please check it before starting. You are welcomed!
-
-Now, you need to install the **Hyperledger Fabric 1.4 LTS** basic software and [dependencies](https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). Again, we try to make things simpler to you by providing a shell script that installs all these stuffs in a clean **Ubuntu 18.04 LTS** system. If you are using this distribution, our script works for you. If you have a different distribution, you can still try the script or you can customize it to work in your system.
+Você precisa instalar o software básico do **Hyperledger Fabric 1.4 LTS** e também suas [dependencies](https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). Again, we try to make things simpler to you by providing a shell script that installs all these stuffs in a clean **Ubuntu 18.04 LTS** system. If you are using this distribution, our script works for you. If you have a different distribution, you can still try the script or you can customize it to work in your system.
 
 Execute the [installation script](prerequirements/installFabric.sh):
 
@@ -221,5 +219,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ0MTkyNDMwXX0=
+eyJoaXN0b3J5IjpbMTUyMDI0OTc2OF19
 -->
