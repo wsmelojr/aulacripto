@@ -6,23 +6,12 @@
 
 Esse plano de aulas tem como objetivo apresentar noções preliminares sobre como configurar e gerenciar uma rede blockchain usando a plataforma Hyperledger Fabric.  Nós adotamos a versão [Hyperledger Fabric 1.4 LTS](https://hyperledger-fabric.readthedocs.io/en/release-1.4/). Esta é uma versão *long term stable*, o que significa que deve se manter estável por pelo menos 2 anos.
 
-A parte teórica do Hyperledger Fabric foi apresentada na aula sobre blockchains
+A parte teórica do Hyperledger Fabric foi apresentada na aula sobre [blockchains](../blockchain). Reisite
 
 
  aula de hoje 
 
-## What the Paillier Experiment is
-
-The Paillier Experiment is a practical experiment which runs homomorphic computing as smart contracts in a blockchain network. Such idea aims to provide privacy to any sensitive information stored into a blockchain ledger.
-
-Our experiment uses the [Paillier Cryptosystem](https://en.wikipedia.org/wiki/Paillier_cryptosystem) to implement homomorphic encryption. This system is easy of implementing and serve as a proof of concept to demonstrate simple use cases related to homomorphic encryption and computing in a blockchain.
-
-
-The complete description of the experiment idea can be found in our respective paper, which can be downloaded from ...
-
-We describe in the next sections the main aspects related to the Fabric blockchain network customizing, the chaincode development  and the application client created to put all the stuff together.
-
-## The customized blockchain network
+## Usando uma rede blockchain customizada
 
 We use a very simple Fabric blockchain network with two ordinary peers (one of them being an endorser) and the solo orderer service. We also use [couchdb](https://hyperledger-fabric.readthedocs.io/en/release-1.4/couchdb_tutorial.html) containers to improve the performance on storing the ledger state on each peer.
 
@@ -237,5 +226,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNDI0MDMyOV19
+eyJoaXN0b3J5IjpbMTgxNjA0NDI4NV19
 -->
