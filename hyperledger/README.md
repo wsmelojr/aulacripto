@@ -24,17 +24,14 @@ O experimento deve ser executado conforme os passos descritos a seguir.
 
 Você precisa instalar o software básico do **Hyperledger Fabric 1.4 LTS** e também suas [dependências](https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). Para simplificar esta etapa, nós utilizamos um *script* que instala todo o software necessário a partir de uma instalação "limpa" do sistema **Ubuntu 18.04 LTS**.
 
-Execute the [installation script](prerequirements/installFabric.sh):
+Execute o [installation script](installFabric.sh):
 
 ```console
 ./installFabric.sh
 ```
+### 2. Crie os artefatos do MSP
 
-**OBSERVATION**: you do not need to run the script as *sudo*. The script will automatically ask for your *sudo* password when necessary. That is important to keep the docker containers running with your working user account.
-
-### 2. Generate the MSP artifacts
-
-Before to execute this step, check if the environment variable FABRIC_CFG_PATH is properly defined. If it is not, uncomment the following line in the script [ptbMSP.sh](blockchain/ptbMSB.sh).
+Antes de executar este passo, verifique se a variável de ambiente FABRIC_CFG_PATH is properly defined. If it is not, uncomment the following line in the script [ptbMSP.sh](blockchain/ptbMSB.sh).
 
 ```console
 export FABRIC_CFG_PATH=$PWD
@@ -219,5 +216,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ4NTQzNTldfQ==
+eyJoaXN0b3J5IjpbLTE2MTU5NjA3OTZdfQ==
 -->
