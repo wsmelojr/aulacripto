@@ -91,7 +91,10 @@ docker ps
 docker stats
 ```
 
-Um comando muito útil é o *logs*, que permite consultar o registro de log de um container específico. 
+Um comando muito útil é o *logs*, que permite consultar o registro de log de um container específico. Você pode por exemplo verificar o log do container *peer0.ptb.de* executando o comando a seguir:
+```console
+docker logs peer0.ptb.de
+```
 
 ## Trabalhando com *chaincodes*
 
@@ -136,8 +139,9 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 ```console
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODc0MTk4NiwtMTIxOTU0NzIwNCwtMz
+eyJoaXN0b3J5IjpbMTg3ODgyODE2MSwtMTIxOTU0NzIwNCwtMz
 AwNTg3NDM1LDE3MDM5MTAwMTUsMTQyNjkxOTc0MSwtMTk3MTI2
 MDc1XX0=
 -->
