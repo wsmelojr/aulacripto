@@ -140,10 +140,10 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 
-### Questão 5: Suponha que você esteja administrando uma rede blockchain de 10 *peers*, sendo que 3 deles são endorsers de um mesmo chaincode. O desenvolvedor do chaincode então comunica a você que uma nova versão do chaincode foi escrita. O que você precisa fazer  
+### Questão 5: Suponha que você esteja administrando uma rede blockchain de 10 *peers*, sendo que 3 deles são endorsers de um mesmo chaincode. O desenvolvedor do chaincode então comunica a você que uma nova versão do chaincode foi escrita. O que você precisará fazer?  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjUyMDQzNzEsLTEyMTk1NDcyMDQsLT
-MwMDU4NzQzNSwxNzAzOTEwMDE1LDE0MjY5MTk3NDEsLTE5NzEy
-NjA3NV19
+eyJoaXN0b3J5IjpbNTQ4Mjk3Mzk1LC0xMjE5NTQ3MjA0LC0zMD
+A1ODc0MzUsMTcwMzkxMDAxNSwxNDI2OTE5NzQxLC0xOTcxMjYw
+NzVdfQ==
 -->
