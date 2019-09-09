@@ -92,12 +92,11 @@ Nós usaremos então um chaincode chamado **fabmorph**. Ele contém funções b�
 
 Nossa rede blockchain inclui um container especifico para simular clientes, que é o container *cli0*. Nós vamos usar esse container para testar o chaincode. O container *cli0* se comunica com *peer0.ptb.de*, simulando a execução de transações.
 
+### 1. Instalando, instanciando e atualizando um chaincode
 
-as an anchor and so execute commands for installing, mantaining and testing the chaincode. These commands documentation can be find [here](https://hyperledger-fabric.readthedocs.io/en/release-1.4/commands/peerchaincode.html). We strongly recommend you read this documentation before continuing.
+Use o comando **install** para habilitar a execução de um chaincode por um determinado *peer*.  
 
-#### 1. Installing, instantiating and upgrading a chaincode
-
-Use the **install** command to enable the chaincode execution for a given peer. In practice, you are making this peer an __endorser__. You must reexecute the install command every time you change the chaincode version.
+command to enable the chaincode execution for a given peer. In practice, you are making this peer an __endorser__. You must reexecute the install command every time you change the chaincode version.
 
 ```console
 docker exec cli0 peer chaincode install -n fabmorph -p github.com/hyperledger/fabric/peer/channel-artifacts/fabmorph -v 1.0
@@ -211,6 +210,6 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzA4NzYyNSwxNDI2OTE5NzQxLC0xOT
+eyJoaXN0b3J5IjpbMTYyNjUwNzYzNiwxNDI2OTE5NzQxLC0xOT
 cxMjYwNzVdfQ==
 -->
