@@ -53,6 +53,8 @@ Esse script usa os arquivos [configtx.yaml](configtx.yaml) e [crypto-config-ptb.
 
 Nós usamos a ferramenta **docker-compose** para gerenciar todos os containers docker da nossa rede. Essa ferramenta basicamente lê o arquivo [docker-compose-ptb.yaml](docker-compose-ptb.yaml) e cria/inicia/pára todos os containers ou um grupo especifico de containers. Você pode aprender mais sobre o docker-compose [aqui](https://docs.docker.com/compose/).
 
+### Questão 3: Explique com suas palavras o que é um container, e qual a diferença básica entre um container e uma máquina virtual. 
+
 Vamos prosseguir com nosso experimento. Execute o seguinte comando para iniciar todos os containers da nossa rede blockchain:
 
 ```console
@@ -80,6 +82,7 @@ O último passo na criação da rede blockchain consiste em criar um *channel* (
 ```console
 ./startPTB.sh
 ```
+### Questão 4: Exa 
 
 Se você conseguiu chegar até aqui, nossa rede blockchain usando o Hyperledger Fabric estará executando em sua máquina, com uma instância do *profile* de rede utilizado. Você pode confirmar isso buscando por informações da rede. Para tanto, use os seguintes comandos:
 
@@ -132,6 +135,7 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTk1NDcyMDQsLTMwMDU4NzQzNSwxNz
-AzOTEwMDE1LDE0MjY5MTk3NDEsLTE5NzEyNjA3NV19
+eyJoaXN0b3J5IjpbLTEzMjczMjE2MjQsLTEyMTk1NDcyMDQsLT
+MwMDU4NzQzNSwxNzAzOTEwMDE1LDE0MjY5MTk3NDEsLTE5NzEy
+NjA3NV19
 -->
