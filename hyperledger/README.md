@@ -61,12 +61,12 @@ O mesmo comando pode ser usado para parar todos os containers. Isso é útil se 
 docker-compose -f docker-compose-ptb.yaml stop
 ```
 
-Se você precisa destruir e
-If you need to reset and restart a completly new blockchain network, use the following script to remove containers and clean all dependencies:
+Se você precisa destruir e recriar os containers da rede blockchain, utiize o seguinte script: 
 
 ```console
 ./teardown.sh
-```
+
+Esse comando limpa toda a área de containers criados previamente, e elimina dependências associadas a outros containers temporários.```
 
 ### 4. Create the Fabric channel and join the peers
 
@@ -217,5 +217,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4NDUzODUsLTE5NzEyNjA3NV19
+eyJoaXN0b3J5IjpbLTE5NDcxMjkxNzIsLTE5NzEyNjA3NV19
 -->
