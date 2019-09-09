@@ -16,7 +16,11 @@ Os arquivos associados à configuração da nossa rede blockchain são os seguin
 
 * [configtx.yaml](configtx.yaml): contém o *profile* da nossa rede Fabric.
 * [crypto-config-ptb.yaml](crypto-config-ptb.yaml): contém a configuração do (Membership Service Provider). Nós geramos todos os certificados digitais necessários a partir deste arquivo.
-* [docker-compose-ptb.yaml](docker-compose-ptb.yaml): contém a configuração dos nossos containers *docker*. Este arquivo usa como base as definições contidas no arquivo [peer-base.yaml](peer-base.yaml), que constitui um modelo de configuração de containers padrão.
+* [docker-compose-ptb.yaml](docker-compose-ptb.yaml): contém a configuração dos nossos containers *docker*. Este arquivo usa como base as definições contidas no arquivo [peer-base.yaml](peer-base.yaml), que constitui um modelo de configuração de containers padrão.repre««
+
+### Questão 1: Examine o arquivo docker-compose-ptb.yaml e acompanhe a explanação do professor sobre a arquitetura da rede blockchain 
+Explique com suas palavras a diferença entre a esteganografia e a forma como usualmente a criptografia é utilizada.
+
 
 O experimento deve ser executado conforme os passos descritos a seguir.
 
@@ -128,6 +132,6 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDU4NzQzNSwxNzAzOTEwMDE1LDE0Mj
-Y5MTk3NDEsLTE5NzEyNjA3NV19
+eyJoaXN0b3J5IjpbLTc2NzU4ODc4MCwtMzAwNTg3NDM1LDE3MD
+M5MTAwMTUsMTQyNjkxOTc0MSwtMTk3MTI2MDc1XX0=
 -->
