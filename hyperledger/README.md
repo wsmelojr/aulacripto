@@ -47,7 +47,7 @@ Em seguida, execute o script:
 
 Esse script usa os arquivos [configtx.yaml](configtx.yaml) e [crypto-config-ptb.yaml](crypto-config-ptb.yaml) para criar os certificados MSP em uma pasta chamada *crypto-config*. Ele também gera o **bloco genesis** em um arquivo chamado *ptb-genesis.block* e a configuração do *channel* no arquivo *ptb-channel.tx*.
 
-### Questão 2: Examine o arquivo docker-compose-ptb.yaml e acompanhe 
+### Questão 2: Examine o diretório de trabalho e veja se o bloco genesis e a configuração do channel foram criados. Agora, explique com suas palavras o que é o bloco genesis e o que é um channel.
 
 ### 3. Gerencie os containers docker
 
@@ -132,6 +132,6 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDU4NTU5MiwtMzAwNTg3NDM1LDE3MD
-M5MTAwMTUsMTQyNjkxOTc0MSwtMTk3MTI2MDc1XX0=
+eyJoaXN0b3J5IjpbLTEyMTk1NDcyMDQsLTMwMDU4NzQzNSwxNz
+AzOTEwMDE1LDE0MjY5MTk3NDEsLTE5NzEyNjA3NV19
 -->
