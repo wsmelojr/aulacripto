@@ -47,15 +47,15 @@ Esse script usa os arquivos [configtx.yaml](configtx.yaml) e [crypto-config-ptb.
 
 ### 3. Gerencie os containers docker
 
-Nós usamos a ferramenta **docker-compose** para gerenciar todos os containers docker da nossa rede. Essa ferramenta basicamente lê o arquivo [docker-compose-ptb.yaml](docker-compose-ptb.yaml) e cria/inicializa/para todos os containers ou um grupo especifico de containers. Você pode aprender mais sobre o docker-compose [aqui](https://docs.docker.com/compose/).
+Nós usamos a ferramenta **docker-compose** para gerenciar todos os containers docker da nossa rede. Essa ferramenta basicamente lê o arquivo [docker-compose-ptb.yaml](docker-compose-ptb.yaml) e cria/inicia/pára todos os containers ou um grupo especifico de containers. Você pode aprender mais sobre o docker-compose [aqui](https://docs.docker.com/compose/).
 
-In the folder [blockchain](blockchain), use the following command to start all the containers:
+Vamos prosseguir com nosso experimento. Execute o seguinte comando para iniciar todos os containers da nossa rede blockchain:
 
 ```console
 docker-compose -f docker-compose-ptb.yaml up -d
 ```
 
-The same tool can be used to stop the containers, just in case you need to stop the blockchain network for any reason. In a similar manner as done before, use the following command to stop all the containers:
+O mesmo comando pode ser usado para parar todos os containers. The same tool can be used to stop the containers, just in case you need to stop the blockchain network for any reason. In a similar manner as done before, use the following command to stop all the containers:
 
 ```console
 docker-compose -f docker-compose-ptb.yaml stop
@@ -216,5 +216,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzMDU1MjMsLTE5NzEyNjA3NV19
+eyJoaXN0b3J5IjpbLTU3MjUxNTg5NywtMTk3MTI2MDc1XX0=
 -->
