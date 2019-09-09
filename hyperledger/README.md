@@ -18,11 +18,7 @@ Os arquivos associados à configuração da nossa rede blockchain são os seguin
 * [crypto-config-ptb.yaml](crypto-config-ptb.yaml): contém a configuração do (Membership Service Provider). Nós geramos todos os certificados digitais necessários a partir deste arquivo.
 * [docker-compose-ptb.yaml](docker-compose-ptb.yaml): contém a configuração dos nossos containers *docker*. Este arquivo usa como base as definições contidas no arquivo [peer-base.yaml](peer-base.yaml), que constitui um modelo de configuração de containers padrão.
 
-### Questão 1: Examine o arquivo docker-compose-ptb.yaml e acompanhe a explanação do professor sobre a arquitetura da rede blockchain representada neste arquivo. Liste cada um dos 7 co
-
-
-Explique com suas palavras a diferença entre a esteganografia e a forma como usualmente a criptografia é utilizada.
-
+### Questão 1: Examine o arquivo docker-compose-ptb.yaml e acompanhe a explanação do professor sobre a arquitetura da rede blockchain representada neste arquivo. Liste cada um dos 7 containers que integram a rede e explique de forma sucinta a função de cada um deles.
 
 O experimento deve ser executado conforme os passos descritos a seguir.
 
@@ -50,6 +46,8 @@ Em seguida, execute o script:
 ```
 
 Esse script usa os arquivos [configtx.yaml](configtx.yaml) e [crypto-config-ptb.yaml](crypto-config-ptb.yaml) para criar os certificados MSP em uma pasta chamada *crypto-config*. Ele também gera o **bloco genesis** em um arquivo chamado *ptb-genesis.block* e a configuração do *channel* no arquivo *ptb-channel.tx*.
+
+### Questão 2: Examine o arquivo docker-compose-ptb.yaml e acompanhe 
 
 ### 3. Gerencie os containers docker
 
@@ -134,6 +132,6 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTMyMjgwOSwtMzAwNTg3NDM1LDE3MD
+eyJoaXN0b3J5IjpbMTE2NDU4NTU5MiwtMzAwNTg3NDM1LDE3MD
 M5MTAwMTUsMTQyNjkxOTc0MSwtMTk3MTI2MDc1XX0=
 -->
