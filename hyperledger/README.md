@@ -112,8 +112,9 @@ Use  o comando **upgrade** para habilitar uma nova versão do chaincode. Isso é
 docker exec cli0 peer chaincode upgrade -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -v 1.1 -c '{"Args":[]}'
 ```
 
-#### 2. Invoking and/or querying a chaincode
+### 2. Invocando e/ou consultando  um chaincode
 
+Nós usaremos a mesma estrutura de comandos do 
 We can also use the same structure of commands in *cli0* to test our chaincode. Here we present some examples about how you can do that.
 
 If you want to invoke the *registerMeter* chaincode method, informing a Paillier public key of 512 bits, you can use such command:
@@ -208,6 +209,6 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg2ODcwMDMzLDE3MDM5MTAwMTUsMTQyNj
-kxOTc0MSwtMTk3MTI2MDc1XX0=
+eyJoaXN0b3J5IjpbMTA5OTc4NTM4OCwxNzAzOTEwMDE1LDE0Mj
+Y5MTk3NDEsLTE5NzEyNjA3NV19
 -->
