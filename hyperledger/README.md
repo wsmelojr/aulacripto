@@ -77,7 +77,10 @@ O último passo na criação da rede blockchain consiste em criar um *channel* (
 ./startPTB.sh
 ```
 
-Se você conseguiu chegar If you succeed in coming so far, the Hyperledger Fabric shall be running in your machine, with an instance of the PTB network profile. You can see information from the containers by using the following commands:
+Se você conseguiu chegar até aqui, nossa rede blockchain usando o Hyperledger Fabric estará executando em sua máquina, com uma instância do *profile* de rede utilizado. Você pode confirmar isso buscando por informações da rede. Para tanto, use os seguintes comandos:
+
+
+ shall be running in your machine, with an instance of the PTB network profile. You can see information from the containers by using the following commands:
 
 ```console
 docker ps
@@ -218,5 +221,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDUzNjEzNiwtMTk3MTI2MDc1XX0=
+eyJoaXN0b3J5IjpbOTU4MjgzNjM5LC0xOTcxMjYwNzVdfQ==
 -->
