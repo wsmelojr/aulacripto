@@ -140,8 +140,10 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 
+### Questão 5: Suponha que você esteja administrando uma rede blockchain de 10 *peers*. Um total de 3 *peers* são endorse
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODgyODE2MSwtMTIxOTU0NzIwNCwtMz
-AwNTg3NDM1LDE3MDM5MTAwMTUsMTQyNjkxOTc0MSwtMTk3MTI2
-MDc1XX0=
+eyJoaXN0b3J5IjpbMTIxMzQ0MDA1LC0xMjE5NTQ3MjA0LC0zMD
+A1ODc0MzUsMTcwMzkxMDAxNSwxNDI2OTE5NzQxLC0xOTcxMjYw
+NzVdfQ==
 -->
