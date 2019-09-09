@@ -94,9 +94,7 @@ Nossa rede blockchain inclui um container especifico para simular clientes, que 
 
 ### 1. Instalando, instanciando e atualizando um chaincode
 
-Use o comando **install** para habilitar a execução de um chaincode por um determinado *peer*. Na pratica, você transformará esse *peer* em um  **endorser**. Você precisa reexecutar o comando *install* sempre que fizer qualquer modificação no *chaincode*.
-
-command to enable the chaincode execution for a given peer. In practice, you are making this peer an __endorser__. You must reexecute the install command every time you change the chaincode version.
+Use o comando **install** para habilitar a execução de um chaincode por um determinado *peer*. Na pratica, você transformará esse *peer* em um  **endorser**. Você precisa reexecutar o comando *install* sempre que fizer qualquer modificação no chaincode.
 
 ```console
 docker exec cli0 peer chaincode install -n fabmorph -p github.com/hyperledger/fabric/peer/channel-artifacts/fabmorph -v 1.0
@@ -210,6 +208,6 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjEzODE2MjQsMTQyNjkxOTc0MSwtMT
-k3MTI2MDc1XX0=
+eyJoaXN0b3J5IjpbMTcwMzkxMDAxNSwxNDI2OTE5NzQxLC0xOT
+cxMjYwNzVdfQ==
 -->
