@@ -100,7 +100,9 @@ Use o comando **install** para habilitar a execução de um chaincode por um det
 docker exec cli0 peer chaincode install -n fabmorph -p github.com/hyperledger/fabric/peer/channel-artifacts/fabmorph -v 1.0
 ```
 
-Use the **instantiate** command to instantiate the chaincode in a given channel. In practice, you are notifying the blockchain network that the chaincode exists. You also create a entry in the ledger with the chaincode hash.
+Use o comando **instantiate** para instanciar o chaincode no respectivo *channel*. Quando fazemos isso, estamos notifciando a rede blockchain a respeito da existência do 
+
+.command to instantiate the chaincode in a given channel. In practice, you are notifying the blockchain network that the chaincode exists. You also create a entry in the ledger with the chaincode hash.
 
 ```console
 docker exec cli0 peer chaincode instantiate -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -v 1.0 -c '{"Args":[]}'
@@ -208,6 +210,6 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMzkxMDAxNSwxNDI2OTE5NzQxLC0xOT
-cxMjYwNzVdfQ==
+eyJoaXN0b3J5IjpbLTE1NTAyNTU1MzksMTcwMzkxMDAxNSwxND
+I2OTE5NzQxLC0xOTcxMjYwNzVdfQ==
 -->
