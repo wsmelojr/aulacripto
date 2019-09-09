@@ -106,9 +106,7 @@ Use o comando **instantiate** para instanciar o chaincode no respectivo *channel
 docker exec cli0 peer chaincode instantiate -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -v 1.0 -c '{"Args":[]}'
 ```
 
-Use  o comando **upgrade** para habilitar uma nova versão do chaincode. Isso é necessário para qualquer chaincode que já tenha sido instanciado anteriormente. 
-
-command to enable a new version of the chaincode. That is necessary for any chaincode that was already instantiated before. Notice that a upgraded chaincode need to be re-installed in each one of its endorser peers.
+Use  o comando **upgrade** para habilitar uma nova versão do chaincode. Isso é necessário para qualquer chaincode que já tenha sido instanciado anteriormente. Note que ao realizar o upgrade de um chaincode, você precisa reinstalar o mesmo em todos os *endorsers*.
 
 ```console
 docker exec cli0 peer chaincode upgrade -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -v 1.1 -c '{"Args":[]}'
@@ -210,6 +208,6 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDY1NDc4MiwxNzAzOTEwMDE1LDE0Mj
-Y5MTk3NDEsLTE5NzEyNjA3NV19
+eyJoaXN0b3J5IjpbNjg2ODcwMDMzLDE3MDM5MTAwMTUsMTQyNj
+kxOTc0MSwtMTk3MTI2MDc1XX0=
 -->
