@@ -69,8 +69,9 @@ Se você precisa destruir e recriar os containers da rede blockchain, utiize o s
 
 Esse comando limpa toda a área de containers criados previamente, e elimina dependências associadas a outros containers temporários.```
 
-### 4. Cre
+### 4. Crie um *channel* e conecte os *peers*
 
+O último passo na criação da rede blockchain consiste em criar um *channel* (na prática, uma instância do ledger compartilhada entre os *peers*) a
 The last step consists on creating a channel (in practice, the ledger among the peers) and join all the active peer on it. That can be done by executing the following script into the folder blockchain:
 
 ```console
@@ -218,5 +219,5 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTA4MDIyMiwtMTk3MTI2MDc1XX0=
+eyJoaXN0b3J5IjpbMTI4ODEwOTY1MiwtMTk3MTI2MDc1XX0=
 -->
