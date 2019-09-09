@@ -88,17 +88,9 @@ docker stats
 
 Apenas relembrando, *chaincode* é o nome dado a um *smart contract* na plataforma Hyperledger Fabric. Por enquanto, vamos utilizar um *chaincode* pronto. Em laboratórios futuros iremos escrever nosso próprio *chaincode*!
 
-Nós usaremos então um chaincode chamado **fabmorph**. Ele contém funções básicas para implementar cripografia homomórfica (outro tema que estudaremos no futu The chaincode source code is [here](blockchain/fabmorph/fabmorph.go).
+Nós usaremos então um chaincode chamado **fabmorph**. Ele contém funções básicas para implementar cripografia homomórfica (outro tema que estudaremos no futuro). O código fonte do chaincode está disponível [aqui](fabmorph/fabmorph.go).
 
-If you need to modify, compile and test the **fabmorph** chaincode, be sure that you have the [Golang *shim* interface](https://godoc.org/github.com/hyperledger/fabric/core/chaincode/shim) properly installed in your machine. If you do not have it, you can install it by using the following command:
-
-```console
-http_proxy="http://webproxy.berlin.ptb.de:8080" go get -u github.com/hyperledger/fabric/core/chaincode/shim
-```
-
-Notice that the provided command assumes you are working in the PTB network and inform the *http_proxy* environment variable. If that is not your case, you can just remove this variable and start your command with *"go get"*.
-
-### Shell commands to deal with a Fabric chaincode
+### Comandos para 
 
 Our blockchain network profile includes the client container *cli0* which is provided only to execute tests with the chaincode. The *cli0* is able to communicate with the blockchain network using the peer *peer0.ptb.de* as an anchor and so execute commands for installing, mantaining and testing the chaincode. These commands documentation can be find [here](https://hyperledger-fabric.readthedocs.io/en/release-1.4/commands/peerchaincode.html). We strongly recommend you read this documentation before continuing.
 
@@ -218,6 +210,6 @@ project and is used as it is;
 * [display-morph.py](clients/display-morph.py): It works as a simple client which queries the ledger and retrieves the digital asset relatad to a respective meter. This module requires the Paillier private key to decrypted the encrypted consumption measurement.
 * [client-morph-mt.py](clients/client-morph-mt.py): It creates multiple threads that collect measures from the OPCUA server and invoke *insertMeasurement* (for encrypted measurements) or the *insertedPlainTextMeasurement* (for plaintext measurements) chaincode. The choice depends on the existence (or not) of the meter's Paillier public key. The module also logs statistic information related to the performance of the blockchain peers. AT THE MOMENT, THIS MODULE IS NOT FUNCTIONAL DUE TO PROBLEMS IN USING ASSYNCHRONOUS FABRIC FROM PYTHON SDK AND TRANSACTIONS AND MULTITHREADS.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQ0Mjk1MTAsMTQyNjkxOTc0MSwtMT
-k3MTI2MDc1XX0=
+eyJoaXN0b3J5IjpbMTcxNjU2ODc1MywxNDI2OTE5NzQxLC0xOT
+cxMjYwNzVdfQ==
 -->
