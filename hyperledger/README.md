@@ -82,7 +82,7 @@ O último passo na criação da rede blockchain consiste em criar um *channel* (
 ```console
 ./startPTB.sh
 ```
-### Questão 4: Exa 
+### Questão 4: Examine cuidadosamente o script startPTB.sh. Note que há containers 
 
 Se você conseguiu chegar até aqui, nossa rede blockchain usando o Hyperledger Fabric estará executando em sua máquina, com uma instância do *profile* de rede utilizado. Você pode confirmar isso buscando por informações da rede. Para tanto, use os seguintes comandos:
 
@@ -135,7 +135,7 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjczMjE2MjQsLTEyMTk1NDcyMDQsLT
-MwMDU4NzQzNSwxNzAzOTEwMDE1LDE0MjY5MTk3NDEsLTE5NzEy
-NjA3NV19
+eyJoaXN0b3J5IjpbMTEyNTUzMjAxNCwtMTIxOTU0NzIwNCwtMz
+AwNTg3NDM1LDE3MDM5MTAwMTUsMTQyNjkxOTc0MSwtMTk3MTI2
+MDc1XX0=
 -->
