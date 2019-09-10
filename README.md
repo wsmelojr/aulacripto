@@ -11,7 +11,7 @@ Ele é mantido pelos seguintes professores:
 - 19 e 21/Ago: [PGP](https://github.com/wsmelojr/aulacripto/tree/master/pgp)
 - 26 e 28/Ago: [Blockchain](https://github.com/wsmelojr/aulacripto/tree/master/blockchain)
 - 2 e 4/Set: [SSL](https://github.com/wsmelojr/aulacripto/tree/master/ssl)
-
+- 9 e 11/Set: [Hyperledger Fabric](hyperldeger)
 
 ## Trabalho final
 
