@@ -57,7 +57,8 @@ ettercap -T -M arp:remote /192.168.1.1// /192.168.1.2-10//
 
 
 Verificar a tabela ARP do computador vitima antes de iniciar o ataque:
-$ arp -n
+
+$ arp -a
 
 4. Depois de iniciar o ataque, verifique novamente a tabela ARP da vitima, qual a diferença? Diga com suas palavras, como realizar um ataque de ARP Spoofing.
 
