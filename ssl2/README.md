@@ -19,6 +19,9 @@ Sobre a entrega das respostas:
 
 Primeiramente, iremos instalar o Kali Linux 2019.3 em uma máquina virtual do VirtualBox. Siga as instruções do professor.
 
+https://images.offensive-security.com/virtual-images/kali-linux-2019.3a-vbox-amd64.ova
+
+
 Para baixar o VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
 
