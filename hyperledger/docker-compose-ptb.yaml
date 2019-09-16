@@ -1,0 +1,146 @@
+##########################################################################
+# FABPUMP EXPERIMENT - PTB - Feb/2019
+# This docker config profile creates:
+# - 2 peers to the organization ptb.de
+# - 2 couchdb instancies (one for each peer)
+# - 1 client docker for testing
+# Author: Wilson S. Melo Jr.
+##########################################################################
+
+version: '2.2'
+# Use de structure networking for creating a separated network in docker.
+# I prefer to use the network default, so I keep this section commented.
+# networks:
+#   ptb_net:
+#     external:
+#       name: ptb_net
+
+services:
+  # Eventually, some tests can require a CA entity. It could be created using such parameters
+  ca.ptb.de:
+     container_name: ca.ptb.de
+     image: hyperledger/fabric-ca
+     environment:
+       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+       - FABRIC_CA_SERVER_CA_NAME=ca.ptb.de
+     ports:
+       - "7054:7054"
+     # EDIT.ME: incluir o nome para o arquivo de chaves da CA, ele sempre muda quando os certificados sao recriados.
+     command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server/ca.ptb.de-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server/131b814791a7c9f81ee32bb94776b4b526ed32f870cbbac3d50f2b608b50dd54_sk -b admin:adminpw -d'
+     volumes:
+         - ./crypto-config/peerOrganizations/ptb.de/ca/:/etc/hyperledger/fabric-ca-server-config
+ 
+  # We are using solo orderer. If you have a BFT orderer, you can just remove this profile
+  # The assign of protocol ports requires special attention here. Also, check the block genesis name
+  orderer.ptb.de:
+    container_name: orderer.ptb.de
+    image: hyperledger/fabric-orderer
+    environment:
+      - ORDERER_GENERAL_LOGLEVEL=debug
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      # The block genesis name goes here. Change it if necessary
+      - ORDERER_GENERAL_GENESISFILE=/etc/hyperledger/configtx/ptb-genesis.block
+      - ORDERER_GENERAL_LOCALMSPID=OrdererMSP
+      - ORDERER_GENERAL_LOCALMSPDIR=/etc/hyperledger/msp/orderer/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric
+    command: orderer
+    ports:
+      - 7050:7050
+    volumes:
+        - ./:/etc/hyperledger/configtx
+        - ./crypto-config/ordererOrganizations/ptb.de/orderers/orderer.ptb.de/msp:/etc/hyperledger/msp/orderer/msp
+    extra_hosts:
+      # I am using extra_hosts to solve specific problems with my DNS. If your DNS works properly, you 
+      # can comment this section.
+      - "peer0.lasige.quinta.com:192.168.2.25"
+      - "peer0.inmetro.quinta.com:192.168.2.26"
+
+
+  # We create the peers here. They follow the template strutucture of Hyperledger Fabric names,
+  # and each peer have its own instance of couchdb. Be careful about ports assign and the volumes
+  # which are mounted in each peer.
+  peer0.ptb.de:
+    # I am using a base config in peer-base.yaml. Parameters that are the same for all the peers
+    # are stored there.
+    extends:    
+      file: peer-base.yaml
+      service: peer-base
+    container_name: peer0.ptb.de
+    environment:
+      - CORE_PEER_ID=peer0.ptb.de
+      - CORE_PEER_ADDRESS=peer0.ptb.de:7051
+      - CORE_PEER_LOCALMSPID=PTBMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@ptb.de/msp
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb0:5984
+    ports:
+      - 7051:7051
+      - 7053:7053
+    volumes:
+        - ./crypto-config/peerOrganizations/ptb.de/peers/peer0.ptb.de/msp:/etc/hyperledger/peer/msp
+        - ./crypto-config/peerOrganizations/ptb.de/users:/etc/hyperledger/msp/users
+    depends_on:
+      - couchdb0
+    # This config item must be used only during performance tests to limit the CPU usage
+    cpus: 4.0
+
+  couchdb0:
+    container_name: couchdb0
+    image: hyperledger/fabric-couchdb
+    ports:
+      - 5984:5984
+    environment:
+      DB_URL: http://localhost:5984/member_db
+
+  peer1.ptb.de:
+    # I am using a base config in peer-base.yaml. Parameters that are the same for all the peers
+    # are stored there.
+    extends:    
+      file: peer-base.yaml
+      service: peer-base
+    container_name: peer1.ptb.de
+    environment:
+      - CORE_PEER_ID=peer1.ptb.de
+      - CORE_PEER_ADDRESS=peer1.ptb.de:7051
+      - CORE_PEER_LOCALMSPID=PTBMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@ptb.de/msp
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb1:5984
+    ports:
+      - 8051:7051
+      - 8053:7053
+    volumes:
+        - ./crypto-config/peerOrganizations/ptb.de/peers/peer1.ptb.de/msp:/etc/hyperledger/peer/msp
+        - ./crypto-config/peerOrganizations/ptb.de/users:/etc/hyperledger/msp/users
+    depends_on:
+      #- orderer.quinta.com
+      - couchdb1
+
+  couchdb1:
+    container_name: couchdb1
+    image: hyperledger/fabric-couchdb
+    ports:
+      - 6984:5984
+    environment:
+      DB_URL: http://localhost:6984/member_db
+
+
+
+  # At the end, I am including an instance of a cli container to make tests in the same machine
+  # where the peers are running. This container can be instantiated independently in a client
+  # machine. You just need to worry about the proper domain names resolution.
+  # At the end, I am including an instance of a cli container to make tests in the same machine
+  # where the peers are running. This container can be instantiated independently in a client
+  # machine. You just need to worry about the proper domain names resolution.
+  cli0:
+    extends:    
+      file: peer-base.yaml
+      service: cli-base  
+    container_name: cli0
+    environment:
+      - CORE_PEER_ID=cli0
+      - CORE_PEER_ADDRESS=peer0.ptb.de:7051
+      - CORE_PEER_LOCALMSPID=PTBMSP
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/ptb.de/users/Admin@ptb.de/msp
+    # command: /bin/bash -c './scripts/script.sh ${CHANNEL_NAME}; sleep $TIMEOUT'
+    depends_on:
+      - peer0.ptb.de
