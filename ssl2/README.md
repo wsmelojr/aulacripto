@@ -86,22 +86,36 @@ $ nmap -sS -O <ip_gateway>:24 > hosts.txt
 
 ## Missão 3
 
-Utilize o SSLStrip para atacar a máquina alvo vizinha.
+Utilize o SSLStrip para atacar a máquina alvo ao acessar um site (o professor irá prover o link do site).
 
 
-![](assets/markdown-img-paste-20190916091920486.png)
+
+![](assets/markdown-img-paste-20190917162016734.png)
 
 > SSL MITM ATTACK: While performing the SSL mitm attack, ettercap substitutes the real ssl certificate  with  its  own. The fake certificate is created on the fly and all the fields are filled according to the real cert  presented  by the server. Only the issuer is modified and signed with the private key contained in the 'etter.ssl.crt' file.
 
+Baixe um Ubuntu bem antigo e rode em uma outra máquina virtual (ele será a máquina alvo):
+http://old-releases.ubuntu.com/releases/jaunty/ubuntu-9.04-desktop-amd64.iso
 
-1. Faça o ARP Poisoning na máquina alvo.
+Crie uma nova máquina no VirtualBox e rode a iso como Live CD n máquina nova.
+
+1. Faça o ARP Poisoning na máquina alvo. Obs: como o site encontra-se dentro da subrede do laboratório, não iremos fazer arp poisoning entre o gateway e a máquina alvo, mas entre o servidor do site e a máquina alvo.
+
+`$ ettercap -T -m mensagens.log -M arp:remote /<ip_servidor>// /<ip_alvo>//`
+
+
+2. Verifique, primeiro, se o site está encriptando os dados da tela de login. Dê um print.
+
+3. Agora, ative o plugin SSLSTRIP:
 
 - Pause a interceptação de pacotes: <kbd>Space</kbd>
 - Veja o help: <kbd>H</kbd>
 - Ative um plugin: <kbd>P</kbd>
 - Escolha: `sslstrip`
+- Retome a interceptação de pacotes: <kbd>Space</kbd>
 
-2. Se der erro:
+
+Se der erro:
 > SSLStrip: cannot setup the redirect, did you uncomment the redir_command_on command on your etter.conf file?
 SSLStrip: plugin load failed: Could not set up HTTP redirect
 
@@ -109,17 +123,11 @@ Abrir a configuração do Ettercap:
 
 `$ sudo nano /etc/ettercap/etter.conf`
 
-Procurar a parte do _Linux_ e desativar a linha "redir_command_on = ... "
+Procurar a parte do _Linux_ e desativar a linha "redir_command_on = ... " e ""redir_command_off = ... ""
+
+4. Verifique se os dados de login serão mostrados em claro no arquivo pacotes.log do ettercap. Dê um print.
 
 
-
-## Missão 4
-
-(na próxima aula)
-
-## Missão 5
-
-(na próxima aula)
 
 
 
