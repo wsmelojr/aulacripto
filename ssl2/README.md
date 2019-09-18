@@ -74,7 +74,7 @@ $ arp -a
 Agora, vamos atacar uma máquina alvo vizinha.
 
 1. Varra a sua subrede a procura de uma máquina alvo:
-$ nmap -sS -O <ip_gateway>:24 > hosts.txt
+$ nmap -sS -O <ip_gateway>/24 > hosts.txt
 
 2. Selecione uma máquina alvo. 
 
