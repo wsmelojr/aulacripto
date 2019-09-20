@@ -1,4 +1,4 @@
-*Data de aula: 9 e 11/9*
+*Data de aula: 9 e 11 de Setembro*
 
 *Prof. Wilson ([wsjunior@inmetro.gov.br](mailto:wsjunior@inmetro.gov.br))*
 
@@ -53,7 +53,7 @@ Esse script usa os arquivos [configtx.yaml](configtx.yaml) e [crypto-config-ptb.
 
 Nós usamos a ferramenta **docker-compose** para gerenciar todos os containers docker da nossa rede. Essa ferramenta basicamente lê o arquivo [docker-compose-ptb.yaml](docker-compose-ptb.yaml) e cria/inicia/pára todos os containers ou um grupo especifico de containers. Você pode aprender mais sobre o docker-compose [aqui](https://docs.docker.com/compose/).
 
-### Questão 3: Explique com suas palavras o que é um container, e qual a diferença básica entre um container e uma máquina virtual. 
+### Questão 3: Explique com suas palavras o que é um container, e qual a diferença básica entre um container e uma máquina virtual.
 
 Vamos prosseguir com nosso experimento. Execute o seguinte comando para iniciar todos os containers da nossa rede blockchain:
 
@@ -67,7 +67,7 @@ O mesmo comando pode ser usado para parar todos os containers. Isso é útil se 
 docker-compose -f docker-compose-ptb.yaml stop
 ```
 
-Se você precisa destruir e recriar os containers da rede blockchain, utiize o seguinte script: 
+Se você precisa destruir e recriar os containers da rede blockchain, utiize o seguinte script:
 
 ```console
 ./teardown.sh
@@ -140,10 +140,4 @@ De forma semelhante, você pode consultar o consumo do medidor registrado anteri
 docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabmorph -c '{"Args":["getConsumption","666"]}'
 ```
 
-### Questão 5: Suponha que você esteja administrando uma rede blockchain de 10 *peers*, sendo que 3 deles são endorsers de um mesmo chaincode. O desenvolvedor do chaincode então comunica a você que uma nova versão do chaincode foi escrita. O que você precisará fazer?  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ4Mjk3Mzk1LC0xMjE5NTQ3MjA0LC0zMD
-A1ODc0MzUsMTcwMzkxMDAxNSwxNDI2OTE5NzQxLC0xOTcxMjYw
-NzVdfQ==
--->
+### Questão 5: Suponha que você esteja administrando uma rede blockchain de 10 *peers*, sendo que 3 deles são endorsers de um mesmo chaincode. O desenvolvedor do chaincode então comunica a você que uma nova versão do chaincode foi escrita. O que você precisará fazer?

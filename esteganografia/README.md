@@ -1,4 +1,4 @@
-*Data de aula: 12/8*
+*Data de aula: 12 de Agosto*
 
 *Prof. Wilson (wsjunior@inmetro.gov.br)*
 
@@ -37,7 +37,7 @@ Nessa aula de laboratório, faremos uso de um aplicativo simples, todavia bastan
 ### Instalando  e testando o *steghide*
 O primeiro passo é atualizar o repositório de programas do Ubuntu com o seguinte comando:
 
-    $ sudo apt-get update	
+    $ sudo apt-get update
 
 Em seguida instale o programa *steghide* com o comando:
 
@@ -51,9 +51,9 @@ Se você consegue ver as informações sobre o comando (versão, parâmetros, et
 
 ### Adicionando uma mensagem secreta a uma imagem
 
-O *steghide* funciona com arquivos de imagem e áudio. Atualmente o *steghide* suporta apenas imagens digitais em formato JPEG e BMP e arquivos de áudio em WAV ou AU. 
+O *steghide* funciona com arquivos de imagem e áudio. Atualmente o *steghide* suporta apenas imagens digitais em formato JPEG e BMP e arquivos de áudio em WAV ou AU.
 
-Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Para realizar a prática deste laboratório de forma correta, crie uma cópia do arquivo de *foto.jpg* com o seguinte nome: *foto-original.jpg*. 
+Para verificar seu funcionamento, vamos escolher um arquivo qualquer chamado *foto.jpg* (pode ser uma foto sua, ou uma paisagem, ou qualquer outra imagem que você goste, desde que seja em formato JPEG). Para realizar a prática deste laboratório de forma correta, crie uma cópia do arquivo de *foto.jpg* com o seguinte nome: *foto-original.jpg*.
 
 **IMPORTANTE**: se você está realizando esse tutorial com uma cópia do reposítorio em sua máquina, ele já provê arquivos exemplo para *foto.jpg* e "foto-original.jpg". Você pode sobreescrever esses dois arquivos, sem problemas!
 
@@ -65,7 +65,7 @@ Em seguida, procedemos executando o seguinte comando:
 
 O *steghide* soicitará uma *passphrase* (correspondente a uma senha ou código de acesso) para proteção da esteganografia. Você deve digitar a *passphrase* e confirmá-la em seguida, conforme o seguinte prompt:
 
-    Enter passphrase: 
+    Enter passphrase:
     Re-Enter passphrase:
     embedding "mensagem.txt" in "foto.jpg"... done
 
@@ -100,7 +100,7 @@ Note que o *steghide* vai ler informações básicas da imagem e perguntar se vo
     format: jpeg
     capacity: 21,8 KB
     Try to get information about embedded data ? (y/n) y
-    Enter passphrase: 
+    Enter passphrase:
 
 Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem secreta será exibido. Caso contrário, o *steghide* notifica que não consegue extrair qualquer informação desse arquivo.
 
@@ -115,11 +115,11 @@ Se você informar a *passphrase* correta, o nome do arquivo contendo a mensagem 
 ### Questão 5: Escolha um dos tópicos extras e explique com suas próprias palavras o que você aprendeu de novo que ainda não havia sido abordado na aula de hoje.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjE1MjY0MjUsNDM4MTc0NTk3LDY3MD
-c0NTY1OCwxOTE5MzUzOTQzLC0xMTYwNjcwNDkwLC0yMDI5NzQ2
-MjAzLDE4Njk4Njk4NTksMjk3MDQ2NTEsMTg2OTg2OTg1OSwxMD
-cwNDgyOTQ4LC05OTY1NTE3MzAsMzQzMzYwMzgwLC01MTU1NDEy
-MDAsMTcyMTg5NjM2MSwxMTMxMDIyNTEzLC0xNTk2NzcwNDI1LD
-E1ODI2MDgwMjUsLTE4NzA0NDU1NSwtMzU1MzIyNTYzLC0xMTM4
-ODA4MTVdfQ==
+eyJoaXN0b3J5IjpbLTgwOTQ0NzY3NiwtMjAyMTUyNjQyNSw0Mz
+gxNzQ1OTcsNjcwNzQ1NjU4LDE5MTkzNTM5NDMsLTExNjA2NzA0
+OTAsLTIwMjk3NDYyMDMsMTg2OTg2OTg1OSwyOTcwNDY1MSwxOD
+Y5ODY5ODU5LDEwNzA0ODI5NDgsLTk5NjU1MTczMCwzNDMzNjAz
+ODAsLTUxNTU0MTIwMCwxNzIxODk2MzYxLDExMzEwMjI1MTMsLT
+E1OTY3NzA0MjUsMTU4MjYwODAyNSwtMTg3MDQ0NTU1LC0zNTUz
+MjI1NjNdfQ==
 -->
