@@ -55,22 +55,22 @@ O *Invoke()*, por sua vez, funciona como um *distribuidor* das funções do chai
     		//permite ao professor corrigir e atribuir nota a avaliacao
     		return s.corrigirAvaliacao(stub, args)
 
-### Questão 2: Localize os métodos *Init()* e o *Invoke()* no fabnotas. Leia a implementação e os comentários deixados sobre as mesmas. Em seguida, liste quais funções são tratadas pelo método *Invoke()*, e explique o que cada uma delas faz.
+### Questão 2: Localize as linhas onde os métodos *Init()* e o *Invoke()* estão no fabnotas. Leia a implementação e os comentários deixados sobre os mesmos. Em seguida, liste quais funções são tratadas pelo método *Invoke()*, e explique o que cada uma delas faz.
 
 ## Compilando o fabnotas
 
-Para compilar o fabnotas, você precisa ter a o compilador da linguagem **Golang** instalado na sua máquina. Isso a princípio foi feito junto com a instação do Hyperledger Fabric, na aula anterior. Para ter certeza que o **Golang** está instalado, digite o seguinte comando no terminal:
+Para compilar o fabnotas, você precisa ter o compilador da linguagem **Golang** instalado na sua máquina. Isso a princípio foi feito junto com a instação do Hyperledger Fabric, na aula anterior. Para ter certeza que o **Golang** está instalado, digite o seguinte comando no terminal:
 
     $ go version
     go version go1.7.1 linux/amd64
 
-Se o **Golang** não foi encontrado, será necessário repetir o procedimento de instalação disponível na aula sobre o [Hyperledger Fabric 1.4 LTS](https://hyperledger-fabric.readthedocs.io/en/release-1.4/).
+Se o **Golang** não foi encontrado, será necessário repetir o procedimento de instalação disponível na aula sobre o [Hyperledger Fabric 1.4 LTS](..).
 
 O próximo passo é instalar a interface *shim*. Para isso, execute o seguinte comando:
 
     $ go get -u github.com/hyperledger/fabric/core/chaincode/shim
 
-OBSERVAÇÃO: a execução desse comando demora um pouco, e a interface não oferece *feedback* de progresso. Mesmo assim, é só aguardar um pouco que a instalação deve ocorrer sem problemas.
+**OBSERVAÇÃO**: a execução desse comando demora um pouco, e a interface não oferece *feedback* de progresso. Mesmo assim, é só aguardar um pouco que a instalação deve ocorrer sem problemas.
 
 Com a interface *shim* instalada, você pode compilar o fabnotas acessando o diretorio onde o chaincode se encontra, e executando o comando *go build*, conforme apresentado a seguir:
 
@@ -82,3 +82,5 @@ Com a interface *shim* instalada, você pode compilar o fabnotas acessando o dir
 Como qualquer chaincode, o fabnotas precisa ser instalado em um *peer* (endorser) e instanciado no channel. Para isso, utilize a mesma rede (PTB) disponível na pasta [hyperledger](..). Você deve utilizar os mesmos comandos executados na aula anterior, mas substituindo o fabmorph (chaincode usando anteriormente) pelo fabnotas (novo chaincode).
 
 ### Questão 3: Instale o fabnotas no *peer0.ptb.de* e depois o instancie ele no channel *ptb-channel*. Copie as saidas de log dos comandos como resposta dessa questão.
+
+*O conteúdo dessa aula ainda não está completo. Mais atividades serão adicionadas aqui nos próximos dias!*
