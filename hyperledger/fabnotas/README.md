@@ -79,8 +79,31 @@ Com a interface *shim* instalada, você pode compilar o fabnotas acessando o dir
 
 ## Executando o fabnotas
 
-Como qualquer chaincode, o fabnotas precisa ser instalado em um *peer* (endorser) e instanciado no channel. Para isso, utilize a mesma rede (PTB) disponível na pasta [hyperledger](..). Você deve utilizar os mesmos comandos executados na aula anterior, mas substituindo o fabmorph (chaincode usando anteriormente) pelo fabnotas (novo chaincode).
+Como qualquer chaincode, o fabnotas precisa ser instalado em um *peer* (endorser) e instanciado no channel. Para isso, utilize a mesma rede (PTB) disponível na pasta [hyperledger](..). Você deve utilizar os mesmos comandos executados na aula anterior, mas substituindo o fabmorph (chaincode usado anteriormente) pelo fabnotas (novo chaincode).
 
-### Questão 3: Instale o fabnotas no *peer0.ptb.de* e depois o instancie ele no channel *ptb-channel*. Copie as saidas de log dos comandos como resposta dessa questão.
+### Questão 3: Instale o fabnotas no *peer0.ptb.de* e depois o instancie ele no channel *ptb-channel*. Copie as saidas de tela dos comandos como resposta dessa questão.
 
-*O conteúdo dessa aula ainda não está completo. Mais atividades serão adicionadas aqui nos próximos dias!*
+Uma vez que o chaincode esteja instalado e instanciado, você pode executar qualquer uma das funções disponíveis nele. O comando de execução se baseia no uso do container *cli0*, tal como fizemos na aula [anterior](..). O comando a seguir serve como exemplo de como invocar a função *inserirAvaliacao*, criando o ID de avaliação *1234* e inserindo a questão *\"Quem é o hacker mais famoso do Inmetro?\"*.
+
+    $ docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabnotas -c '{"Args":["inserirAvaliacao","1234","Quem é o hacker mais famoso do Inmetro?"]}'
+
+Note que os parametros em *Args* devem ser informados de acordo com a função que se deseja executar. Os parâmetros devem seguir a ordem estrita determinada na implementação da função. A sintaxe (uso de colchetes e aspas) também deve ser observada rigorosamente.
+
+Um outro exemplo dado a seguir consiste em invocar a função *responderAvaliacao* para atribuir uma resposta à questão inserida anteriormente. Repetimos como argumento o mesmo ID de avaliação *1234* e inserimmos uma resposta à questão: "O nome dele é Ewerton Madruga".
+
+    $ docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabnotas -c '{"Args":["responderAvaliacao","1234","O nome dele é Ewerton Madruga"]}'
+
+### Questão 4: Execute as funções *corrigirAvaliacao* e *countLedger* disponíveis no chaincode, seguindo a mesma estrutura de comandos. Copie as saídas de tela dos comandos como resposta desta questão.
+
+## Conhecendo melhor o Couchdb
+Uma das vantagens de se utilizar o CouchDB é fato do mesmo se tratar de um sistema de gerenciamento de banco de dados (SGDB) e possuir uma interface pŕopria para acesso às suas informações.
+
+Se você tem a rede blockchain executando em sua máquina, você pode acessar a interface web do CouchDB associado ao *peer0.ptb.de* clicando [aqui](http://localhost:5984/_utils/). Acesse o link para os registros do chaincode clicando no link *ptb-channel_fabnotas*. Você poderá consultar todos os ativos digitais associados a este chaincode.
+
+**IMPORTANTE**: A interface web de acesso ao CouchDB NÃO utiliza os mecanismos de acesso do blockchain. Ela dá uma visão correspondente à cópia local do ledger do contida no container *peer0.ptb.de*. Lembre-se que qualquer alteração realizada diretamente na cópia local pode comprometer essa réplica do ledger.
+
+Agora que conhecemos melhor o CouchDB, é possível testar também a função *queryLedger*. Esta função permite executar diretamente uma consulta (*query*) no ledger, todavia usando a blockchain, e não a cópia local de um determinado *peer*. Para tanto, a *query* precisar ser formatada como uma expressão JSON. O comando a seguir exemplifica como isso pode ser feito:
+
+    docker exec cli0 peer chaincode invoke -o orderer.ptb.de:7050 -C ptb-channel -n fabnotas -c '{"Args":["queryLedger","{\"selector\":{\"_id\":{\"$gt\":null}}}"]}'
+
+### Questão 5: É hora de você executar sua propria função dentro *chaincode*. Pense em uma função que seja útil para o funcionamento deste chaincode, escreva o código da mesma e teste sua execução no blockchain. Copie o código fonte de sua função e as saídas de tela dos comandos como resposta desta questão.
