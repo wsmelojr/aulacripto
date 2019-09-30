@@ -13,6 +13,7 @@ Ele é mantido pelos seguintes professores:
 - 2 e 4/Set: [SSL](https://github.com/wsmelojr/aulacripto/tree/master/ssl)
 - 9 e 11/Set: [Hyperledger Fabric](hyperledger)
 - 16 e 18/Set: [SSL 2](https://github.com/wsmelojr/aulacripto/tree/master/ssl2)
+- 24 e 25/Set: [Criaçao de chaincodes](hyperledger/fabnotas)
 
 ## Trabalho final
 
