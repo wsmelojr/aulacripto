@@ -86,23 +86,21 @@ $ nmap -sS -O <ip_gateway>/24 > hosts.txt
 
 ## Missão 3
 
-Utilize o SSLStrip para atacar a máquina alvo ao acessar um site (o professor irá prover o link do site).
-
+O SSLStrip é uma ferramenta desenvolvida por Moxie Marlinspike, apresentada pela primeira vez na black hat 2009 na palestra [“New Tricks For Defeating SSL In Practice”](https://www.blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf).
 
 
 ![](assets/markdown-img-paste-20190917162016734.png)
 
-> SSL MITM ATTACK: While performing the SSL mitm attack, ettercap substitutes the real ssl certificate  with  its  own. The fake certificate is created on the fly and all the fields are filled according to the real cert  presented  by the server. Only the issuer is modified and signed with the private key contained in the 'etter.ssl.crt' file.
+> O funcionamento do SSLStrip é simples, substituindo todas as requisições "https://" de uma página por "http://", e realiza um MITM (Man-In-The-Middle) entre o servidor e o cliente. A ideia é que a vítima e o atacante se comuniquem através de HTTP, enquanto o atacante e o servidor se comunicam em HTTPS, com o certificado do servidor. Portanto, o atacante é capaz de ver todo o tráfego da vítima em texto plano.
+
+Vamos utilizar, então, o SSLStrip para atacar a máquina alvo ao acessar um site qualquer.
 
 Baixe um Ubuntu bem antigo e rode em uma outra máquina virtual (ele será a máquina alvo):
 http://old-releases.ubuntu.com/releases/jaunty/ubuntu-9.04-desktop-amd64.iso
 
-Crie uma nova máquina no VirtualBox e rode a iso como Live CD n máquina nova.
+Crie uma nova máquina no VirtualBox e rode a iso como um Live CD na máquina nova.
 
-1. Faça o ARP Poisoning na máquina alvo. Obs: como o site encontra-se dentro da subrede do laboratório, não iremos fazer arp poisoning entre o gateway e a máquina alvo, mas entre o servidor do site e a máquina alvo.
-
-`$ ettercap -T -m mensagens.log -M arp:remote /<ip_servidor>// /<ip_alvo>//`
-
+1. Faça o ARP Poisoning na máquina alvo.
 
 2. Verifique, primeiro, se o site está encriptando os dados da tela de login. Dê um print.
 
@@ -125,7 +123,9 @@ Abrir a configuração do Ettercap:
 
 Procurar a parte do _Linux_ e desativar a linha "redir_command_on = ... " e ""redir_command_off = ... ""
 
-4. Verifique se os dados de login serão mostrados em claro no arquivo pacotes.log do ettercap. Dê um print.
+4. Verifique se os dados de login serão mostrados em claro no arquivo _mensagens.log_ do ettercap. Dê um print.
+
+5. Repita o ataque para outra máquina alvo do laboratório. Dê um print de algum dado sensível capturado (credenciais, mensagem confidencial, etc).
 
 
 

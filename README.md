@@ -12,6 +12,7 @@ Ele é mantido pelos seguintes professores:
 - 26 e 28/Ago: [Blockchain](https://github.com/wsmelojr/aulacripto/tree/master/blockchain)
 - 2 e 4/Set: [SSL](https://github.com/wsmelojr/aulacripto/tree/master/ssl)
 - 9 e 11/Set: [Hyperledger Fabric](hyperledger)
+- 16 e 18/Set: [SSL 2](https://github.com/wsmelojr/aulacripto/tree/master/ssl2)
 
 ## Trabalho final
 
