@@ -137,3 +137,4 @@ https://medium.com/bugbountywriteup/ssl-strip-how-awesome-it-is-a0eb79e28bcc <br
 https://www.vivaolinux.com.br/dica/Interceptando-trafego-SSL-HTTPS-com-Ettercap-e-SSLstrip <br>
 https://www.guiadoti.com/2014/07/entendendo-e-atacando-com-sslstrip/ <br>
 https://www.guiadoti.com/2017/09/sslstrip-2-0-hsts-bypass/ <br>
+https://charlesreid1.com/wiki/MITM_Labs/Bettercap_Over_Wifi <br>
