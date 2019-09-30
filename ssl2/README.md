@@ -127,6 +127,8 @@ Procurar a parte do _Linux_ e desativar a linha "redir_command_on = ... " e ""re
 
 5. Repita o ataque para outra máquina alvo do laboratório. Dê um print de algum dado sensível capturado (credenciais, mensagem confidencial, etc).
 
+6. Como a política de segurança _HTTP Strict Transport Security_ (HSTS) ajuda a mitigar ataques como o SSLSTRIP?
+
 
 
 
