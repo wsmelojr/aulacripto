@@ -112,7 +112,7 @@ Não entre com o _passphrase_ (deixe em branco).
 
 `$ scp nome.jpg aulacripto@endereço_ip:/home/aulacripto`
 
-4. Conecte-se a esse outro servidor ssh para verificar se a figura foi copiada corretamente. Dê um print no conteúdo do diretório remoto. Depois, feche a conexão.
+4. Conecte-se ao servidor ssh do professor (usuário: 'aulacripto') para verificar se a figura foi copiada corretamente. Dê um print no conteúdo do diretório _/home/aulacrito_. Depois, feche a conexão.
 
 5. Do terminal da sua máquina local (Ubuntu), copie para a sua máquina local a figura _/home/aulacripto/missao3.jpg_ que está no servidor do professor. Dê um print na figura.
 
