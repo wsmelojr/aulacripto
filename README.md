@@ -16,6 +16,10 @@ Ele é mantido pelos seguintes professores:
 - 24 e 25/Set: [Criaçao de chaincodes](hyperledger/fabnotas)
 - 30/Set e 2/Out: [Secure Shell (SSH)](ssh)
 
+## Notas
+
+AV1 - https://docs.google.com/spreadsheets/d/e/2PACX-1vSM_QDfPngjaZl_-zKzCqY3Q7y8xJYSfIeSJbVkeUWu3qHRTCNK6LFNlFoho0vhvILZkKAUph-Xspad/pubhtml
+
 ## Trabalho final
 
 Os dias das apresentações e os temas foram definidos como segue:
