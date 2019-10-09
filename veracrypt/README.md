@@ -1,4 +1,4 @@
-*Data das aulas: 30/9 e 2/10* <br>
+*Data das aula: 9/10* <br>
 *Prof. Sérgio (smcamara@inmetro.gov.br)*
 
 
@@ -41,5 +41,5 @@ https://launchpad.net/veracrypt/trunk/1.24/+download/veracrypt-1.24-Ubuntu-18.04
 
 
 
-# Links interessantes:
+## Links interessantes:
 https://www.osradar.com/install-veracrypt-on-ubuntu-18-04/ <br>
