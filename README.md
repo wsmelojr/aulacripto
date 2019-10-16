@@ -15,6 +15,10 @@ Ele é mantido pelos seguintes professores:
 - 16 e 18/Set: [Secure Socker Layer (SSL) - Parte 2](https://github.com/wsmelojr/aulacripto/tree/master/ssl2)
 - 24 e 25/Set: [Criaçao de chaincodes](hyperledger/fabnotas)
 - 30/Set e 2/Out: [Secure Shell (SSH)](ssh)
+- 7 e 14/Out: [Criaçao de chaincodes - Continuação](hyperledger/fabnotas)
+- 9/Out: [Criptografia de volumes](veracrypt)
+- 16/Out: Acompanhamento individual de trabalhos
+- 21 e 23/Out: [Criptografia homomórfica](homomorphic)
 
 ## Notas
 
@@ -24,28 +28,28 @@ AV1 - https://docs.google.com/spreadsheets/d/e/2PACX-1vSM_QDfPngjaZl_-zKzCqY3Q7y
 
 Os dias das apresentações e os temas foram definidos como segue:
 
-- 11/Nov   
-  - Blockchain (Hellen e Pedro)  
+- 18/Nov (8h)
+  - Hyperledger Composer (Hellen e Pedro)
   - Token de Banco (Ícaro)
-  - Esteganografia (Hugo)
+  - Esteganografia (Mileny e Hugo)
 
-- 13/Nov
-  - Geração de números aleatórios (Mileny e Marlon)
-  - Relógio Eletrônico de Ponto (Marcus)
-  - Blockchain (Humberto e Marcos)
-
-- 18/Nov
+- 18/Nov (10h)
   - Site seguro com Certificado Digital (Diego)
-  - _A definir_ (Hitallo)
-  - Anonimato (Charlles)
+  - Anonimato (Charlles e Hitallo)
+
+- 27/Nov (10h)
+  - Geração de números aleatórios (Marlon)
+  - Relógio Eletrônico de Ponto (Marcus)
+  - Serviço orderer usando Kafka (Humberto e Marcos)
+
 
 ### Entrega
 
-O _deadline_ para entrega dos trabalhos escritos é dia **22/11/2019**.
+O _deadline_ para entrega dos trabalhos escritos é dia **27/11/2019**.
 
-Devem seguir o template da SBC:
+Devem seguir o [Template da SBC](https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos). 
 
-Entregar em formato _.pdf_.
+Entregar em formato _.PDF_.
 
 ### Apresentação
 
@@ -77,3 +81,13 @@ As apresentações devem ter duração de 15 a 20 minutos, com 10 minutos reserv
   - Explicar o funcionamento do Tor, Privoxy e Stunnel. Como seus mecanismos contribuem para o anonimato de um usuário da internet?
   - Acessar a DeepWeb, visitar sites que não sejam ilegais, documentar.
   - Implementar uma conexão via Stunnel (ex: https://charlesreid1.com/wiki/Stunnel/SSH)
+
+- Hyperledger Composer
+  - Explicar o funcionamento da ferramenta Hyperledger Composer.
+  - Descrever a aplicação implementada.
+  - Mostrar a funcionalidade da aplicação em um exemplo prático.
+
+- Serviço orderer usando Kafka
+  - Explicar o que é o Kafka, e que funcionalidades ele disponibiliza.
+  - Descrever um modelo de rede blockchain usando Kafka.
+  - Implementar um tutorial usando uma rede blockchain com Kafka como orderer.
