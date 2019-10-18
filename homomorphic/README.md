@@ -53,7 +53,7 @@ Passaremos agora a algumas atividades práticas, usando uma implementação do c
 
 ### 1 - Crie um par de chaves criptográficas
 
-Para trabalhar com o Paillier, precisamos criar um par de chaves criptográficas. Isso pode ser feito usando o programa [keygen.py](keygen.py). Abra o programa em uma outra aba do seu navegador e verifique como ele trabalha. Observe os parâmetros que devem ser informados. Em seu funcionamento, esse programa basicamente faz uso de um objeto *paillier* para criar o par de chaves, que serão salvos em disco em arquivos de extensão *.pub* e *.priv*.
+Para trabalhar com o Python PHE, precisamos criar um par de chaves criptográficas. Isso pode ser feito usando o programa [keygen.py](keygen.py). Abra o programa em uma outra aba do seu navegador e verifique como ele trabalha. Observe os parâmetros que devem ser informados. Em seu funcionamento, esse programa basicamente faz uso de um objeto *paillier* para criar o par de chaves, que serão salvos em disco em arquivos de extensão *.pub* e *.priv*.
 
 Você pode executar esse programa conforme o comando abaixo:
 
@@ -73,7 +73,7 @@ Note que o valor encriptado é um número muito maior do que o valor em claro. N
 
 ### 3 - Some dois números encriptados
 
-Usando as saidas criptografadas geradas no passo anterior, iremos chamar o programa [simple-sum.py](simple-sum.py) para realizar a soma de dois números encriptados. Assim como fizemos anteriormente, abra o programa em uma outra aba do seu navegador e verifique como ele trabalha. Observe os parâmetros que devem ser informados. Após entender seu funcionamento, execute o mesmo com a sintaxe a seguir, substituindo *<dado A>* e *<dado B>* por números criptografados gerados no passo anterior.
+Usando as saidas criptografadas geradas no passo anterior, iremos chamar o programa [simple-sum.py](simple-sum.py) para realizar a soma de dois números encriptados. Assim como fizemos anteriormente, abra o programa em uma outra aba do seu navegador e verifique como ele trabalha. Observe os parâmetros que devem ser informados. Após entender seu funcionamento, execute o mesmo com a sintaxe a seguir, substituindo os parâmetros *dado A* e *dado B* por números criptografados gerados no passo anterior.
 
 ```console
 $ python3 simple-sum.py minhachave.pub <dado-A> <dado-B>
