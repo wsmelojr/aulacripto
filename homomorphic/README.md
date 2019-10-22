@@ -47,7 +47,7 @@ A seguir, temos mais um vídeo que constroi uma analogia entre a criptografia ho
 
 Um dos grandes desafios à criptografia completamente homomórfica é o custo computacional. Os criptossistemas atuais pertencentes a essa classe são extremamente demorados quando executados em um computador, o que reduz significativamente sua aplicação prática. Embora vários avanços tenham sido feitos nos últimos anos neste campo, o mesmo constitui ainda um dos principais desafios para os criptólogos. Por outro lado, a criptografia parcialmente homomórfica possui um custo computacional bastante razoável, sendo assim mais aplicável a problemas práticos no mundo atual.
 
-## Atividade pŕatica em Python - Criptossistema Paillier
+## Atividade prática em Python - Criptossistema Paillier
 
 Passaremos agora a algumas atividades práticas, usando uma implementação do criptossistema [Paillier](https://en.wikipedia.org/wiki/Paillier_cryptosystem). O Paillier é um criptossistema parcialmente homomórfico, que possibilita operações de soma no domínio criptográfico. Sua implementação é simples, o que faz com que o mesmo esteja disponível em diferentes bibliotecas de programas que disponibilizam algoritmos criptográficos. É o caso do Python [PHE](https://python-paillier.readthedocs.io/en/stable/phe.html), que utilizaremos nessa prática de laboratório.
 
@@ -90,7 +90,7 @@ Se você executou todos os procedimentos de forma correta, vai observar que a so
 
 ### Questão 3: Repita os procedimentos práticos de criação de chaves, criptografia, soma e descriptografia realizado anteriormente, mas agora com chaves de 1024 e 2048 bits. Você pode dizer o que acontece gradualmente à medida que se aumenta o tamanho da chave? Acrescente os logs de tela de seu experimento para sustentar suas observações.
 
-## Atividade pŕatica em Python - Votação eletrônica
+## Atividade prática em Python - Votação eletrônica
 
 Como vimos anteriormente, o uso de criptografia homomórfica para proteger a privacidade de individuos em uma votação eletrônica constitui uma das aplicações mais interessantes para essa tecnologia. 
 
@@ -103,7 +103,7 @@ Agora que sabemos como o tema é controverso, vamos executar uma prática de lab
 O sistema de voto eletrônico implementado funciona um pouco diferente de uma eleição convencional. Ao invés de escolher um único candidato de uma lista, você deve atribuir uma nota de 0 a 10 para cada um dos candidatos que constam na lista. Ao final, o sistema de voto eletrônico soma as notas atribuídas. O vencedor da votação é, consequentemente, aquele que obtiver a maior soma das notas. Assim, vamos à prática!
 
 ### 1. Preencha sua cédula de voto eletrônico
-O primeiro passo em nossa prática é preencher a cédula eleitoral com os votos (notas) atribuidos a cada candidato. Para isso, é preciso ter uma chave criptográfica específica. Como inicialmente faremos a prática individual de todas as etapas, você pode usar a mesma chave criada para o exercício anterior, ou usar o programa [keygen.py](keygen.py) para criar uma nova chave.
+O primeiro passo em nossa prática é preencher a cédula eleitoral com os votos (notas) atribuidos a cada candidato. Para isso, é preciso ter um par de chaves criptográficas. Para isso, você pode usar o mesmo par de chaves criado para o exercício anterior, ou usar o programa [keygen.py](keygen.py) para criar novas chaves.
 
 De posse do seu par de chaves, dê uma analisada no programa [vote-ballot.py](vote-ballot.py). Esse programa é mais complexo do que os programas usados anteriormente, mas ele basicamente utiliza uma estrutura de dicionário do Python (*dict*) para criar uma cédula eleitoral. Em seguida, um *loop* é criado para se preencher o *dict* com os votos de cada candidato. Por fim, a estrutura completa é salva em arquivo, usando-se a classe *pickle*.
 
@@ -144,10 +144,10 @@ Por fim, faremos a prática esperada por todos! Usando os programas usados nas e
 
 Para manter esse procedimento de forma segura, usaremos o seguinte protocolo:
 
-1 - O professor gera um par de chaves e disponibiliza a chave pública aos alunos.
-2 - Os alunos escolhem dois representantes que ficam responsáveis por coletar os votos individuais e e somar esses votos.
-3 - Cada aluno gera um arquivo de voto criptografado, usando o programa [vote-ballot.py](vote-ballot.py).
-4 - Os alunos representantes coletam os votos individuais e os somam, usando o programa [vote-sum.py](vote-sum.py). O arquivo de totalização é entregue ao professor.
-4 - O professor revela o resultado da votação usando o programa [vote-reveal.py](vote-reveal.py).
+1. O professor gera um par de chaves e disponibiliza a chave pública aos alunos.
+2. Os alunos escolhem dois representantes que ficam responsáveis por coletar os votos individuais e e somar esses votos.
+3. Cada aluno gera um arquivo de voto criptografado, usando o programa [vote-ballot.py](vote-ballot.py).
+4. Os alunos representantes coletam os votos individuais e os somam, usando o programa [vote-sum.py](vote-sum.py). O arquivo de totalização é entregue ao professor.
+5. O professor revela o resultado da votação usando o programa [vote-reveal.py](vote-reveal.py).
 
 ### Questão 5: Existem diversas falhas de segurança no nosso protocolo de votação. Embora ele garanta a privacidade, os alunos podem facilmente burlar o resultado da eleição. Aponte pelo menos uma possível forma de fazer isso, e apresente em seguida uma contramedida que poderia ser usada para prevenir esse ataque.
