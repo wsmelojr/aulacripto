@@ -89,3 +89,65 @@ $ python3 simple-decrypt.py minhachave.priv <dado criptografado>
 Se você executou todos os procedimentos de forma correta, vai observar que a soma obtida no domínio criptografo é exatamente a mesma daquela que seria obtida somando-se os números em claro.
 
 ### Questão 3: Repita os procedimentos práticos de criação de chaves, criptografia, soma e descriptografia realizado anteriormente, mas agora com chaves de 1024 e 2048 bits. Você pode dizer o que acontece gradualmente à medida que se aumenta o tamanho da chave? Acrescente os logs de tela de seu experimento para sustentar suas observações.
+
+## Atividade pŕatica em Python - Votação eletrônica
+
+Como vimos anteriormente, o uso de criptografia homomórfica para proteger a privacidade de individuos em uma votação eletrônica constitui uma das aplicações mais interessantes para essa tecnologia. 
+
+O uso de sistemas de voto eletrônico (*e-voting*) é um tema bastante controverso. Mesmo especialistas divergem sobre a forma mais segura e eficiente de se implementar esse sistema. Para ter uma ideia dos problemas envolvidos, veja esse vídeo, que entrevista um pesquisador da Unicamp a respeito do tema.
+
+[![VideoAula](https://img.youtube.com/vi/xATaNCsre9Q/0.jpg)](https://www.youtube.com/watch?v=xATaNCsre9Q "Clique para assistir essa entrevista com o Prof. Diego Aranha")
+
+Agora que sabemos como o tema é controverso, vamos executar uma prática de laboratório em que simulamos um sistema de voto eletrônico baseado em criptografia homomórfica. Novamente, utilizaremos o criptossistema Paillier para implementar as diretivas criptográficas necessárias.
+
+O sistema de voto eletrônico implementado funciona um pouco diferente de uma eleição convencional. Ao invés de escolher um único candidato de uma lista, você deve atribuir uma nota de 0 a 10 para cada um dos candidatos que constam na lista. Ao final, o sistema de voto eletrônico soma as notas atribuídas. O vencedor da votação é, consequentemente, aquele que obtiver a maior soma das notas. Assim, vamos à prática!
+
+### 1. Preencha sua cédula de voto eletrônico
+O primeiro passo em nossa prática é preencher a cédula eleitoral com os votos (notas) atribuidos a cada candidato. Para isso, é preciso ter uma chave criptográfica específica. Como inicialmente faremos a prática individual de todas as etapas, você pode usar a mesma chave criada para o exercício anterior, ou usar o programa [keygen.py](keygen.py) para criar uma nova chave.
+
+De posse do seu par de chaves, dê uma analisada no programa [vote-ballot.py](vote-ballot.py). Esse programa é mais complexo do que os programas usados anteriormente, mas ele basicamente utiliza uma estrutura de dicionário do Python (*dict*) para criar uma cédula eleitoral. Em seguida, um *loop* é criado para se preencher o *dict* com os votos de cada candidato. Por fim, a estrutura completa é salva em arquivo, usando-se a classe *pickle*.
+
+Para invocar o programa, execute:
+
+```console
+$ python3 vote-ballot.py minhachave.pub meuvoto.vot
+```
+
+Esse comando vai usar a chave pública *minhachave.pub* para criptografar seu voto e salvará a célula encriptada no arquivo *meuvoto.vot*.
+
+Feito esse comando, repita o processo para pelo menos 3 outros votos, salvando-os em arquivos diferentes. Ao final, você deverá ter 3 arquivos, cada um contendo uma cédula eleitoral com diferentes votos.
+
+### 2. Some os votos criptografados
+
+Agora que temos pelo menos 3 arquivos contendo cédulas de votos criptografados, vamos usar o programa [vote-sum.py](vote-sum.py) para somar os votos individuais em cada arquivo, e salvar em uma cédula que totaliza esses votos. Examine o programa [vote-sum.py](vote-sum.py) antes de executá-lo, pra entender como ele funciona. Note que o programa é capaz de processar uma lista de arquivos de cédula, que são informados como argumentos ao final do programa. Assim, para realizar a soma dos votos, utilize o programa com a sintaxe a seguir:
+
+```console
+$ python3 vote-sum.py minhachave.pub total.vot voto1.vot voto2.vot voto3.vot
+```
+
+Esse comando vai usar a chave pública *minhachave.pub* para salvar no arquivo *total.vot* a soma dos votos contidos nos arquivos *voto1.vot*, *voto2.vot* e *voto3.vot*. Modifique a sintaxe do programa de acordo com o nome que você deu para os arquivos de voto que você criou no passo anterior.
+
+### 3. Revele o voto contido numa cédula
+
+Agora que temos uma cédula que contém a soma dos votos individuais, podemos revelar o resultado da votação descriptografando essa cédula. Para isso usamos o programa [vote-reveal.py](vote-reveal.py). Abra o programa e, tal como fizemos com os outros, examine seu código. Você verá que ele é bastante simples comparado com os demais, uma vez que simplesmente abre a cédula criptografada e descriptografa cada uma de suas posições, usando a chave privada respectiva. Para executar esse comando, utilize a seguinte sintaxe:
+
+```console
+$ python3 vote-reveal.py minhachave.priv total.vot
+```
+
+Note que esse programa também pode ser usado para descriptografar os votos individuais, uma vez que dispomos da chave privada. Para preservar os votos individuais, portanto, seria necessário um protocolo de segurança que garanta que quem tem os votos individuais não possui a chave privada, e vice-versa.
+
+### Questão 4: Copie os logs de tela gerados na execução dos passos 1, 2 e 3 como resposta a essa questão, evidenciando que você executou as atividades.
+
+## E finalmente, a escolha do seu Professor Favorito (Serginho)!
+Por fim, faremos a prática esperada por todos! Usando os programas usados nas etapas anteriores, cada aluno vai gerar uma cédula de votação criptografada. Os votos individuais serão somados também de forma criptografada, de modo a preservar o sigilo dos mesmos. Por fim, o arquivo contendo a soma dos votos será disponibilizado ao professor, para que ele revele o resultado da votação.
+
+Para manter esse procedimento de forma segura, usaremos o seguinte protocolo:
+
+1 - O professor gera um par de chaves e disponibiliza a chave pública aos alunos.
+2 - Os alunos escolhem dois representantes que ficam responsáveis por coletar os votos individuais e e somar esses votos.
+3 - Cada aluno gera um arquivo de voto criptografado, usando o programa [vote-ballot.py](vote-ballot.py).
+4 - Os alunos representantes coletam os votos individuais e os somam, usando o programa [vote-sum.py](vote-sum.py). O arquivo de totalização é entregue ao professor.
+4 - O professor revela o resultado da votação usando o programa [vote-reveal.py](vote-reveal.py).
+
+### Questão 5: Existem diversas falhas de segurança no nosso protocolo de votação. Embora ele garanta a privacidade, os alunos podem facilmente burlar o resultado da eleição. Aponte pelo menos uma possível forma de fazer isso, e apresente em seguida uma contramedida que poderia ser usada para prevenir esse ataque.

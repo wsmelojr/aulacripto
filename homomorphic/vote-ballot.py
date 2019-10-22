@@ -34,12 +34,14 @@ if __name__ == "__main__":
 
     #monta a cedula eleitoral com os strings padrao
     meuvoto = {
-        "Madruga": 0,
-        "Serginho": 0,
-        "Lucila": 0,
-        "Wladmir": 0,
         "Flavinha": 0,
-        "Wilson": 0
+        "Lucila": 0,
+        "Joao": 0,
+        "Madruga": 0,
+        "Rodrigo": 0,
+        "Serginho": 0,
+        "Wilson": 0,
+        "Wladmir": 0
     }
 
     #percorre as entradas da cedula, solicitando o valor de voto para cada um dos items
@@ -47,8 +49,14 @@ if __name__ == "__main__":
         #gera mensagem para pedir entrada de dados
         msg = "Atribua seu voto para " + x + " (0-10): "
 
-        #pede voto ao usuario e jah executa a criptografia 
-        meuvoto[x] = pub_key.raw_encrypt(int(input(msg)))
+        #faz o controle do limite de valores informados
+        voto = -1
+        while voto < 0 or voto > 10:
+            #pede que o usuario informe o voto
+            voto = int(input(msg))
+
+        #criptografa o valor informado no voto
+        meuvoto[x] = pub_key.raw_encrypt(voto)
 
     #escreve a celula com voto criptografado em arquivo
     pickle.dump(meuvoto,open(ballot_file, "wb"))
