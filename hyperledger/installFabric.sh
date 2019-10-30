@@ -38,8 +38,9 @@ sudo npm install npm@5.6.0 -g
 sudo cp $DIR$VARFILE /etc/profile.d/
 
 #install Hyperledger Fabric 1.4 LTS
+#third-party images (couchdb, kafka, zookeeper) must be the version 0.4.15
 cd ~/
-curl -sSL "http://bit.ly/2ysbOFE" | sudo bash -s -- 1.4.0 1.4.0 1.4.0
+curl -sSL "http://bit.ly/2ysbOFE" | sudo bash -s -- 1.4.0 1.4.0 0.4.15
 cd - 1> /dev/null
 
 #customizes the $PATH variable to include the Fabric tools 
@@ -49,6 +50,10 @@ PATH="$PATH:$HOME/fabric-samples/bin"
 echo '' >> $HOME/.profile
 echo '#adding Fabric tools to the $PATH' >> $HOME/.profile
 echo 'PATH="$PATH:$HOME/fabric-samples/bin"' >> $HOME/.profile
+#does the same with bashrc file, to be sure that $PATH changes also will happen in desktop mode
+echo '' >> $HOME/.bashrc
+echo '#adding Fabric tools to the $PATH' >> $HOME/.bashrc
+echo 'PATH="$PATH:$HOME/fabric-samples/bin"' >> $HOME/.bashrc
 
 #add current user to the docker group, so she can now to manage containers
 sudo usermod -a -G docker $USER
