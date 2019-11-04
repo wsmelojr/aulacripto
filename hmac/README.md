@@ -47,3 +47,26 @@ Você pode agora comparar a solução encontrada para a Questão 2 com o script 
 ```console
 $ ./meuMAC.sh minhainformacao.txt minhasenhadeautenticacao
 ```
+
+## O algorito HMAC (RFC 2104)
+
+Como discutimos antes, diferentes formas de implementação do HMAC podem ser propostas para tornar a função mais segura. Um algoritmo clássico é definido pela [RFC 2104](https://tools.ietf.org/html/rfc2104). Basicamente, ela define algumas operações de dispersão sobre blocos de um tamanho especificado. A chave de autenticação precisa ter o mesmo tamanho dos blocos. Esse algorítmo dificulta ataques de força bruta que tentem, a partir de um MAC coletado, calcular a chave de autenticação respectiva.
+
+![Como funciona o HMAC - RFC 2104](rfc2104.jpg)
+
+Podemos fazer uso do HMAC de forma simples, tendo ele instalado no sistema Linux. Para isso, execute os seguintes comandos:
+
+```console
+$ sudo apt update
+$ sudo apt install libgcrypt20-dev
+```
+
+A partir de agora, temos o comando [*hmac256*](http://manpages.ubuntu.com/manpages/cosmic/man1/hmac256.1.html) instalado. Ele é implementação do algoritmo descrito na figura anterior. Dê uma olhada na descrição do comando apresentada no link acima. Você verá que a utilização é bem simples, bastando informar um string correspondente à chave de autenticação *key* e em seguida o arquivo para o qual se quer gerar o autenticador.
+
+```console
+$ hmac256 minhasenhadeautenticacao minhainformacao.txt
+```
+
+Novamente, não se esqueça que você vai precisar de um arquivo chamado *minhainformação. txt*.
+
+### Questão 3: Forme uma dupla com um de seus colegas. Discutam como o HMAC pode ser usado em combinação com a programa de criptografia homomórfica usado para fazer uma eleição segura na [aula anterior](../homomorphic). Em seguida, implemente a ideia de vocês usando os programas da aula anterior e o comando *hmac256*.

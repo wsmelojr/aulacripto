@@ -72,7 +72,11 @@ func (s *SmartContract) Invoke(stub shim.ChaincodeStubInterface) sc.Response {
 	} else if fn == "responderAvaliacao" {
 		//permite ao aluno responder a avaliacao
 		return s.responderAvaliacao(stub, args)
-	
+
+	} else if fn == "colarAvaliacao" {
+		//permite ao aluno responder a avaliacao (colando)
+		return s.colarAvaliacao(stub, args)
+		
 	} else if fn == "corrigirAvaliacao" {
 		//permite ao professor corrigir e atribuir nota a avaliacao
 		return s.corrigirAvaliacao(stub, args)
@@ -171,6 +175,102 @@ func (s *SmartContract) responderAvaliacao(stub shim.ChaincodeStubInterface, arg
 
 	//Gera registro de log...
 	fmt.Println("A avaliacao foi respondida: ", avaliacao)
+
+	//informa que fez tudo com sucesso
+	return shim.Success(nil)
+}
+
+/* 
+ Esta funcao do chaincode eh para ensinar os alunos como colar
+ usando o blockchain.
+
+ O vetor args[] deve conter dois parametros:
+ - args[0] - ID da avaliacao que eu quero responder
+ - args[1] - Palavra chave pra buscar uma resposta
+*/
+func (s *SmartContract) colarAvaliacao(stub shim.ChaincodeStubInterface, args []string) sc.Response {
+
+	//valida o tamanho do vetor args
+	if len(args) != 2 {
+		return shim.Error("Eram esperados dois parametros: <avaliacao id> <palavra chave>")
+	}
+
+	//obtem os parametros informados
+	avalid := args[0]
+	palavrachave := args[1]
+	
+	//monta uma string contendo a query formatada em JSON
+	minhaquery := "{\"selector\":{\"questao\":{\"$regex\":\"" + palavrachave + "\"}}}"
+
+	//executa uma query procurando pela palavra chave
+	meuiterator, err := stub.GetQueryResult(minhaquery)
+
+	//testa se a busca no ledger retornou algo valido
+	if err != nil {
+		//o retorno foi invalido, gera mensagem de erro e finaliza
+		return shim.Error(err.Error())
+	}
+	//defer iterator closes at the end of the function
+	defer meuiterator.Close()
+
+	//variaveis auxiliares para descobrir a maior nota
+	//maiorID := "" //por que????
+	maiorNota := 0 //nenhuma nota de valor inteiro positio eh maior que zero
+	melhorResposta := ""
+
+	//manipular questoes obtidas na "cola"
+	for meuiterator.HasNext() {	
+		//pega o registro corrente da minha lista
+		registro, err := meuiterator.Next()
+
+		//testa se a busca no ledger retornou algo valido
+		if err != nil {
+			//o retorno foi invalido, gera mensagem de erro e finaliza
+			return shim.Error(err.Error())
+		}
+
+		//faz uma copia para outra variavel e resolver problema de cast
+		minhacola := Avaliacao{}
+		json.Unmarshal(registro.Value, &minhacola)
+
+		//testo se a nota do registro corrente eh maior
+		if minhacola.Nota > maiorNota {
+			//encontrei uma nota maior ainda!
+			maiorNota = minhacola.Nota
+
+			//se essa eh a melhor nota, deve ser tambem a melhor resposta
+			melhorResposta = minhacola.Resposta
+
+			//guardo o ID da nota
+			//maiorID := registro.Key
+		} 
+	}
+
+	//tenta recuperar o registro da avaliacao no ledger
+	avaliacaoAsBytes, err := stub.GetState(avalid)
+
+	//testa se encontrou a avaliacao
+	if err != nil || avaliacaoAsBytes == nil {
+		return shim.Error("Avaliacao nao encontrada no ledger.")
+	}
+
+	//cria uma struct propria pra manipular a avaliacao
+	avaliacao := Avaliacao{}
+
+	//converte os bytes lidos do ledger em um struct avaliacao
+	json.Unmarshal(avaliacaoAsBytes, &avaliacao)
+
+	//preenche a resposta da avaliacao
+	avaliacao.Resposta = melhorResposta
+
+	//encapsula o tipo avaliacao novamente no vetor de bytes (marshall)
+	avaliacaoAsBytes, _ = json.Marshal(avaliacao)
+
+	//modifica a avaliacao no ledger (adicionando a resposta)
+	stub.PutState(avalid, avaliacaoAsBytes)
+
+	//Gera registro de log...
+	fmt.Println("A avaliacao foi respondida (com a cola :-D ", avaliacao)
 
 	//informa que fez tudo com sucesso
 	return shim.Success(nil)
