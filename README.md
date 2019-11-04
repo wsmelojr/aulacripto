@@ -19,10 +19,14 @@ Ele é mantido pelos seguintes professores:
 - 9/Out: [Criptografia de volumes](veracrypt)
 - 16/Out: Acompanhamento individual de trabalhos
 - 21 e 23/Out: [Criptografia homomórfica](homomorphic)
+- 30/Out: Acompanhamento individual de trabalhos
+- 4/Nov: [Código de Autenticação de Mensagem](hmac)
+- 6/Nov: Acompanhamento individual de trabalhos
+- 8/Nov: Palestra sobre Forense Computacional
 
 ## Notas
 
-AV1 - https://docs.google.com/spreadsheets/d/e/2PACX-1vSM_QDfPngjaZl_-zKzCqY3Q7y8xJYSfIeSJbVkeUWu3qHRTCNK6LFNlFoho0vhvILZkKAUph-Xspad/pubhtml
+ Acessa a planilha de avaliações [aqui](https://docs.google.com/spreadsheets/d/e/2PACX-1vSM_QDfPngjaZl_-zKzCqY3Q7y8xJYSfIeSJbVkeUWu3qHRTCNK6LFNlFoho0vhvILZkKAUph-Xspad/pubhtml).
 
 ## Trabalho final
 
@@ -38,8 +42,7 @@ Os dias das apresentações e os temas foram definidos como segue:
   - Anonimato (Charlles e Hitallo)
 
 - 27/Nov (10h)
-  - Geração de números aleatórios (Marlon)
-  - Relógio Eletrônico de Ponto (Marcus)
+  - Relógio Eletrônico de Ponto (Marcus e Marlon)
   - Serviço orderer usando Kafka (Humberto e Marcos)
 
 
